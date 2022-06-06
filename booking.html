@@ -42,28 +42,30 @@
     <body>
 
         <!--================Header Area =================-->
-     <header class="main_header_area">
+        <header class="main_header_area">
             <div class="header_top">
                 <div class="container">
                     <div class="header_top_inner">
                         <div class="pull-left">
-                           <a ><font color="black"> <i class="fa fa-phone"></i><b>+91 <?php echo $fetch_array['resort_phno'] ; ?></b></font></a>
-                            <a href="mailto:<?php echo $fetch_array['resort_email'] ;  ?>"><font color="black"><i class="fa fa-envelope-o"></i><b><?php echo $fetch_array['resort_email'] ; ?></b></font></a>
+                           <a ><font color="black"><ion-icon name="call"></ion-icon>
+                            <b>+05 86373873 </b></font></a>
+                            <a href="mailto:<?php echo $fetch_array['resort_email'] ;  ?>"><font color="black"><ion-icon name="mail-outline"></ion-icon></font></a>
                         </div>
                         <div class="pull-right">
                             <ul class="header_social">
-                                <li><a href="<?php  echo $fetch_array['resort_fb'] ?>"><b><font color="black"size="5px"><i class="fa fa-facebook"></i></font></b></a></li>
-                                <li><a href="<?php echo $fetch_array['resort_insta'] ?>"><b><font color="black" size="5px"><i class="fa fa-youtube"></i></font></b></a></li>
-                                 <li><a href="<?php echo "" ?>"><b><font color="black"size="5px"><i class="fa fa-instagram"size="5px"></i></font></a></b></li>
-                                <li><a href="<?php echo $fetch_array['resort_whatsapp'] ?>"><b><font color="black"size="5px"><i class="fa fa-whatsapp"></i></font></a></b></li>
-
-
-                               
+                                <li><a href="<?php  echo $fetch_array['resort_fb'] ?>"><b><font color="black"size="5px"><ion-icon name="logo-facebook"></ion-icon>
+                                </font></b></a></li>
+                                <li><a href="<?php echo $fetch_array['resort_insta'] ?>"><b><font color="black" size="5px"><ion-icon name="logo-youtube"></ion-icon></font></b></a></li>
+                                 <li><a href="<?php echo "" ?>"><b><font color="black"size="5px"><ion-icon name="logo-instagram"></ion-icon>
+                                 </font></a></b></li>
+                                <li><a href="<?php echo $fetch_array['resort_whatsapp'] ?>"><b><font color="black"size="5px"><ion-icon name="logo-whatsapp"></ion-icon></font></a></b></li>
+                         
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="header_menu">
                 <nav class="navbar navbar-default">
                     <div class="container">
@@ -76,45 +78,38 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="#">
-                         <img src="" alt="">
-                                <img src="" alt=""> 
+                               
+                       <img src="img/logo22.png" alt="">
+                                <img src="../img/home-slider/logo22.png" alt=""> 
                             </a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                
-                                    <li ><a href="index.html"> Home</a></li>
-                                    <li class="dropdown submenu active"><a href="room.html">Rooms</a></li>
-                                    <li><a href="gallery.html">GALLERY</a></li>
-                                  <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li class="dropdown submenu active"><a href="index.html"> ACCUEIL</a></li>
+                                    <li><a href="room.html">CHAMBRES</a></li>
+                                    <li><a href="gallery.html">GALLERIES</a></li>
+                                  <li><a href="about-us.html">A PROPOS DE NOUS</a></li>
+                                <li><a href="contact-us.html">CONTACTEZ NOUS</a></li>
                             </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                            
+                            <ul class="nav navbar-nav navbar-right">                 
                                 <li class="book_btn">
-                                    <a class="book_now_btn" href="function/booknow.html">Book now</a>
+                                    <a class="book_now_btn" href="">Reservez dés maintenant</a>
+                                    <a class="connexion" href="signup.html">connexion</a> 
                                 </li>
                             </ul>
+
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
             </div>
-                <?php 
-            if(isset($_SESSION['notification']))
-            {
-                ?>
-            
+
         <div class="<?php echo $_SESSION['notification_type'];?>">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong><center><?php echo $_SESSION['notification'];?></center></strong> 
-        </div>
-        <?php 
-            }
-            unset($_SESSION['notification']);
-            unset($_SESSION['notification_type']);
-            ?>
+            <strong><center></center></strong> 
+        </div>      
         </header>
         <!--================Header Area =================-->
         
@@ -122,10 +117,10 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_content">
-                    <h3>Booking</h3>
+                    <h3>Reservation </h3>
                     <ul>
-                        <li ><a href="index.php">Home</a></li>
-                        <li class="active"><a href="">booking</a></li>
+                        <li ><a href="index.php">ACCUEIL</a></li>
+                        <li class="active"><a href="">Reservation</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,22 +133,20 @@
                 <div class="row room_details_inner">
                     <div class="col-md-8">
                         <div class="room_details_content">
-                           <?php
-                           if(($_SESSION['cart'][1]!=0)||($_SESSION['cart'][2]!=0))
-                           {
-                           ?> 
+                           
                             <div class="room_service_list">
-                                 <h3 class="room_d_title">Room Booking</h3>
+                                 <h3 class="room_d_title">
+                                    Réservation de chambre</h3>
                             </div>
-                      <h5><b>NOTE: <font color='green'> 100% Safe & Secure Gateway</font></b></h5>
+                      <h5><b>NOTE: <font color='pink'> 100% Safe & Secure Gateway</font></b></h5>
                             <div class="room_details_comment">
                                 
                                 <form class="contact_us_form row" action="function/bookroom.php" method="post" id="contactForm" >
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" name="name" placeholder="Name*" autofocus required="Enter The Name" value="<?php if(isset($_SESSION['name'])){echo $_SESSION['name']; } ?>">
+                                        <input type="text" class="form-control" name="name" placeholder="Name*" autofocus required="Enter The Name" value="">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="email" class="form-control" name="email" placeholder="Email*" required  value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email']; };?>">
+                                        <input type="email" class="form-control" name="email" placeholder="Email*" required  value="">
                                     </div>
 
 
@@ -166,53 +159,40 @@
                                     </div>
 
                                      <div class="form-group col-md-12">
-                                        <input type="number" class="form-control" name="phno" max="9999999999"  max="1111111111"  placeholder="PHONE NUMBER*(9876543210)" required value="<?php if(isset($_SESSION['phno'])){echo $_SESSION['phno']; } ?>" >
+                                        <input type="number" class="form-control" name="phno" max="9999999999"  max="1111111111"  placeholder="PHONE NUMBER*(9876543210)" required value="" >
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" name="arrival" readonly    placeholder="ARRIVAL*" required  value="<?php if(isset($_SESSION['arrival'])){echo $_SESSION['arrival']; } ?>">
+                                        <input type="text" class="form-control" name="arrival" readonly    placeholder="ARRIVAL*" required  value="">
                                         </div>
                                         <div class="form-group col-md-12">
-                                        <input type="text"  class="form-control" name="departure" readonly   placeholder="DEPARTURE*" required value="<?php if(isset($_SESSION['departure'])){echo $_SESSION['departure']; } ?>">
+                                        <input type="text"  class="form-control" name="departure" readonly   placeholder="DEPARTURE*" required value="">
                                     </div>
 
                                      <div class="form-group col-md-12">
-                                        <select class="form-control" type="number" name="adults"  required  value="<?php if(isset($_SESSION['adults'])){echo $_SESSION['adults']; } ?>">
+                                        <select class="form-control" type="number" name="adults"  required  value="">
                                             <option  value="" >ADULTS*</option>
-                                    <?php
-                                    for($i=1;$i<=$tottel_rooms*3;$i++)
-                                    {
-
-                                    ?>
-                                             <option><?php echo $i;   ?></option>
+                       
+                                             <option></option>
                                              
-                                        <?php
-                                    }
-                                        ?>
+                                
                                          </select>
                                     </div>
                                      <div class="form-group col-md-12">
                                         <select class="form-control" type="number" name="children"  required value="0" value="<?php if(isset($_SESSION['children'])){echo $_SESSION['children']; } ?>">
                                             <option  value="" >CHILDREN*</option>
                                             
-                                            <?php
-                                    for($i=0;$i<=$tottel_rooms*2;$i++)
-                                    {
-
-                                    ?>
-                                             <option><?php echo $i;   ?></option>
+                                         
+                                             <option></option>
                                              
-                                        <?php
-                                    }
-                                        ?>
-                                        
+                                  
                                          </select>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <select class="form-control" type="number" name="method_payment"  required value="<?php if(isset($_SESSION['method_payment'])){echo $_SESSION['method_payment']; } ?>">
-                                            <option  value="" >METHOD OF PAYMENT*</option>
+                                            <option  value="" >METHOD DE PAYMENT*</option>
                                             
-                                             <option>ONLINE PAYMENT</option>
-                                             <option>OFFLINE PAYMENT</option>
+                                             <option></option>
+                                             <option></option>
                                              
                                          </select>
                                     </div>
@@ -221,19 +201,17 @@
                                      <textarea class="form-control" name="address"  rows="1" placeholder="ADDRESS*" required value="<?php if(isset($_SESSION['address'])){echo $_SESSION['address']; } ?>"></textarea>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <button type="submit" value="submit"  class="btn submit_btn form-control" required  >BOOK ROOM</button>
+                                        <button type="submit" value="submit"  class="btn submit_btn form-control" required >RESERVE maintenant</button>
                                     </div>
 
-                                    <?php 
-                                }
-                                    ?>
+                             
 
 
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="search_right_sidebar">
                           
                               
@@ -369,7 +347,7 @@
                              </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
@@ -498,7 +476,7 @@
         <!--================End Footer Area =================-->
         
         <!--================Search Box Area =================-->
-        <div class="search_area zoom-anim-dialog mfp-hide" id="test-search">
+        <!-- <div class="search_area zoom-anim-dialog mfp-hide" id="test-search">
             <div class="search_box_inner">
                 <h3>Search</h3>
                 <div class="input-group">
@@ -508,7 +486,7 @@
                     </span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--================End Search Box Area =================-->
         
         

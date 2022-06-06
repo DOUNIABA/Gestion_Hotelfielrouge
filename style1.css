@@ -148,7 +148,7 @@ body{
 }
 .form-content .input-box input:focus,
 .form-content .input-box input:valid{
-  border-color: #fd7792;;
+  border-color: #fd7792;
 }
 .form-content .input-box i{
   position: absolute;
