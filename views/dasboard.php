@@ -9,30 +9,27 @@
     <meta name="author" content="SmartUniversity" />
     <title>Kairali Resort | Home
 </title>
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
-	<!-- icons -->
-    <link href="views/assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="views/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<!--bootstrap -->
-	<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="views/assets/plugins/summernote/summernote.css" rel="stylesheet">
-	<!-- morris chart -->
-    <link href="views/assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-    <!-- Material Design Lite CSS -->
-	<link rel="stylesheet" href="cssdash/material/material.min.css">
-	<link rel="stylesheet" href="cssdash/material_style.css">
-	<!-- animation -->
-	<link href="views/assets/css/pages/animate_page.css" rel="stylesheet">
-	<!-- Template Styles -->
-    <link href="cssdash/plugins.min.css" rel="stylesheet" type="text/css" />
-    <link href="cssdash/style.css" rel="stylesheet" type="text/css" />
-    <link href="cssdash/responsive.css" rel="stylesheet" type="text/css" />
-    <link href="cssdash/theme-color.css" rel="stylesheet" type="text/css" />
-
-	<!-- favicon -->
-    <link rel="shortcut icon" href="views/assets/img/favicon.png" /> 
-
+<link href="../views/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/flaticon.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="../views/assets/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Rev slider css -->
+        <link href="../views/assets/css/settings.css" rel="stylesheet">
+        <link href="../views/assets/css/layers.css" rel="stylesheet">
+        <link href="../views/assets/css/navigation.css" rel="stylesheet">
+        <link href="../views/assets/css/animate.css" rel="stylesheet">
+        
+        <!-- Extra plugin css -->
+        <link href="../views/assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="../views/assets/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-select.css" rel="stylesheet">
+        <link href="../views/assets/css/simpleLightbox.css" rel="stylesheet">
+        
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/responsive.css" rel="stylesheet">
 </head>
 
  <!-- END HEAD -->
@@ -431,27 +428,21 @@
         <!-- end footer -->
     </div>
     <!-- start js include path -->
-    <script src="views/assets/plugins/jquery/jquery.min.js" ></script>
-    <script src="views/assets/plugins/popper/popper.min.js" ></script>
-    <script src="views/assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
-	<script src="views/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- bootstrap -->
-    <script src="views/assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
-    <script src="views/assets/plugins/sparkline/jquery.sparkline.min.js" ></script>
-	<script src="views/assets/js/pages/sparkline/sparkline-data.js" ></script>
-    <!-- Common js-->
-	<script src="views/assets/js/app.js" ></script>
-    <script src="views/assets/js/layout.js" ></script>
-    <script src="views/assets/js/theme-color.js" ></script>
-    <!-- material -->
-    <script src="views/assets/plugins/material/material.min.js"></script>
-    <!-- animation -->
-    <script src="views/assets/js/pages/ui/animations.js" ></script>
-    <!-- morris chart -->
-    <script src="views/assets/plugins/morris/morris.min.js" ></script>
-    <script src="views/assets/plugins/morris/raphael-min.js" ></script>
-    <script src="views/assets/js/pages/chart/morris/morris_home_data.js" ></script>
-    
-    <!-- end js include path -->
+	    <script src="../views/js/jquery-2.2.4.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../views/js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="../views/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../views/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../views/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../views/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../views/vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../views/vendors/counterup/waypoints.min.js"></script>
+        <script src="../views/vendors/counterup/jquery.counterup.min.js"></script>
+        <script src="../views/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../views/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="../views/vendors/bootstrap-selector/bootstrap-select.js"></script>
+        <script src="../views/vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../views/js/theme.js"></script>
   </body>
 </html>

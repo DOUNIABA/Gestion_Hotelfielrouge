@@ -1,6 +1,4 @@
-<?php
-require_once('../database/DB.php');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -273,7 +271,7 @@ require_once('../database/DB.php');
                     <div class="col-md-4 col-sm-6">
                         <div class="explor_item">
                             <a href="room-details.php?id=1" class="room_image">
-                                <img src="views/assets/img/room-2.jpg" alt="">
+                                <img src="../views/assets/img/room-2.jpg" alt="">
                             </a>
                             <div class="explor_text">
                                 <a href="room-details.php?id=1"><h4>Economy</h4></a>

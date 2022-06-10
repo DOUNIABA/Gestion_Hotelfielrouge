@@ -1,7 +1,5 @@
 
-<?php
-require_once('../database/DB.php');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,8 +10,27 @@ require_once('../database/DB.php');
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Kairali Resort | About-Us</title>
-        <?php require_once'./css_includes.php'?>
-
+        <link href="../views/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/flaticon.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="../views/assets/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Rev slider css -->
+        <link href="../views/assets/css/settings.css" rel="stylesheet">
+        <link href="../views/assets/css/layers.css" rel="stylesheet">
+        <link href="../views/assets/css/navigation.css" rel="stylesheet">
+        <link href="../views/assets/css/animate.css" rel="stylesheet">
+        
+        <!-- Extra plugin css -->
+        <link href="../views/assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="../views/assets/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-select.css" rel="stylesheet">
+        <link href="../views/assets/css/simpleLightbox.css" rel="stylesheet">
+        
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/responsive.css" rel="stylesheet">
     </script></head>
     <body>
 
@@ -281,8 +298,22 @@ require_once('../database/DB.php');
                 </div>
             </div>
         </footer>   
-        <?php require_once'./js_includes.php' ?>
-
+        <script src="../views/js/jquery-2.2.4.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../views/js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="../views/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../views/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../views/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../views/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../views/vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../views/vendors/counterup/waypoints.min.js"></script>
+        <script src="../views/vendors/counterup/jquery.counterup.min.js"></script>
+        <script src="../views/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../views/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="../views/vendors/bootstrap-selector/bootstrap-select.js"></script>
+        <script src="../views/vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../views/js/theme.js"></script>
         <script src="js/theme.js"></script>
     </body>
 </html>
