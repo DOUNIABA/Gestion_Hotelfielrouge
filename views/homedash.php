@@ -1,4 +1,7 @@
 
+<?php
+require_once('../database/DB.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +13,9 @@
     <meta name="description" content="Responsive Admin Template" />
     <meta name="author" content="SmartUniversity" />
     <title>Kairali Resort | Home
-</title>
-   
 
-	<!-- favicon -->
-    <link rel="shortcut icon" href="views/assets/img/favicon.png" /> 
+</title>
+        <?php require_once'./css_includes.php'?>
 
 </head>
 
@@ -455,28 +456,8 @@
         </div>
         <!-- end footer -->
     </div>
-    <!-- start js include path -->
-    <script src="views/assets/css/jquery/jquery.min.js" ></script>
-    <script src="views/assets/css/popper/popper.min.js" ></script>
-    <script src="views/assets/css/jquery-blockui/jquery.blockui.min.js" ></script>
-	<script src="views/assets/css/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- bootstrap -->
-    <script src="views/assets/css/bootstrap/js/bootstrap.min.js" ></script>
-    <script src="views/assets/css/sparkline/jquery.sparkline.min.js" ></script>
-	<script src="views/assets/js/pages/sparkline/sparkline-data.js" ></script>
-    <!-- Common js-->
-	<script src="views/assets/js/app.js" ></script>
-    <script src="views/assets/js/layout.js" ></script>
-    <script src="views/assets/js/theme-color.js" ></script>
-    <!-- material -->
-    <script src="views/assets/css/material/material.min.js"></script>
-    <!-- animation -->
-    <script src="views/assets/js/pages/ui/animations.js" ></script>
-    <!-- morris chart -->
-    <script src="views/assets/css/morris/morris.min.js" ></script>
-    <script src="views/assets/css/morris/raphael-min.js" ></script>
-    <script src="views/assets/js/pages/chart/morris/morris_home_data.js" ></script>
-    
+	<?php require_once'./js_includes.php' ?>
+
     <!-- end js include path -->
   </body>
 </html>

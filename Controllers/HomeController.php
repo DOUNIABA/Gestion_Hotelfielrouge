@@ -1,7 +1,7 @@
 <?php
 class HomeController{
-    public function index($homedash){    
-        include('views/homedash.php');
+    public function index($show){    
+        include('views/'.$show.'.php');
  
     }
 }

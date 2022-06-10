@@ -1,4 +1,6 @@
-
+<?php
+require_once('../database/DB.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,29 +48,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-         <!-- Icon css link -->
-         <link href="views/assets/css/font-awesome.min.css" rel="stylesheet">
-         <link href="views/assets/css/styles.css" rel="stylesheet">
-         <link href="views/assets/css/flaticon.css" rel="stylesheet">
-         <!-- Bootstrap -->
-         <link href="views/assets/css/bootstrap.min.css" rel="stylesheet"> 
-         <!-- Rev slider css -->
-         <link href="views/assets/css/settings.css" rel="stylesheet">
-         <link href="views/assets/css/layers.css" rel="stylesheet">
-         <link href="views/assets/css/navigation.css" rel="stylesheet">
-         <link href="views/assets/css/animate.css" rel="stylesheet">
-          
-         <!-- Extra plugin css -->
-         <link href="views/assets/css/magnific-popup.css" rel="stylesheet">
-         <link href="views/assets/css/owl.carousel.min.css" rel="stylesheet">
-         <link href="views/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-         <link href="views/assets/css/bootstrap-select.css" rel="stylesheet">
-         <link href="views/assets/css/simpleLightbox.css" rel="stylesheet">
-         
-         <link href="views/assets/css/style.css" rel="stylesheet">
-         <link href="views/assets/css/responsive.css" rel="stylesheet"> 
- 
-        
+        <?php require_once'./css_includes.php'?>
+
     </head>
     <body>
 
@@ -478,23 +459,7 @@
         
         
         
-        <!--================End Footer Area =================-->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="js/jquery-2.2.4.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Rev slider js -->
-        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/counterup/waypoints.min.js"></script>
-        <script src="vendors/counterup/jquery.counterup.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="vendors/bootstrap-selector/bootstrap-select.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="js/theme.js"></script>
+        <?php require_once'./js_includes.php' ?>
+
     </body>
 </html>

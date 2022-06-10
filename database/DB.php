@@ -11,5 +11,8 @@ class Connection{
             echo $ex->getMessage();
         }
     } 
+    public function getAsset($par){
+        return ('http://localhost/Gestion_Hotelfielrouge/views/assets/'.$par.'')
+    }
 }
 ?>

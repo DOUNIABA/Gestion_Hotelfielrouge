@@ -1,4 +1,8 @@
 
+<?php
+require_once('../database/DB.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- BEGIN HEAD -->
@@ -10,35 +14,8 @@
     <meta name="author" content="SmartUniversity" />
     <title>
 </title>
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
-	<!-- icons -->
-    <link href="assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<!--bootstrap -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/summernote/summernote.css" rel="stylesheet">
-	<!-- morris chart -->
-    <link href="assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-    <!-- Material Design Lite CSS -->
-	<link rel="stylesheet" href="assets/plugins/material/material.min.css">
-	<link rel="stylesheet" href="assets/css/material_style.css">
-	<!-- animation -->
-	<!-- <link href="assets/css/pages/animate_page.css" rel="stylesheet"> -->
-	<!-- Template Styles -->
-    <!-- <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" /> -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="assets/css/theme-color.css" rel="stylesheet" type="text/css" /> -->
+<?php require_once'./css_includes.php'?>
 
-	<!-- favicon -->
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" />  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
     body {
         color: #404E67;
@@ -372,33 +349,7 @@
                             </div>     
                     </div>
                    <!-- start widget -->
-					
-					             
-					           
-			   
+                   <?php require_once'./js_includes.php' ?>
 
-    <!-- start js include path -->
-    <script src="assets/plugins/jquery/jquery.min.js" ></script>
-    <script src="assets/plugins/popper/popper.min.js" ></script>
-    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
-	<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
-    <script src="assets/plugins/sparkline/jquery.sparkline.min.js" ></script>
-	<script src="assets/js/pages/sparkline/sparkline-data.js" ></script>
-    <!-- Common js-->
-	<script src="assets/js/app.js" ></script>
-    <script src="assets/js/layout.js" ></script>
-    <script src="assets/js/theme-color.js" ></script>
-    <!-- material -->
-    <script src="assets/plugins/material/material.min.js"></script>
-    <!-- animation -->
-    <script src="assets/js/pages/ui/animations.js" ></script>
-    <!-- morris chart -->
-    <script src="assets/plugins/morris/morris.min.js" ></script>
-    <script src="assets/plugins/morris/raphael-min.js" ></script>
-    <script src="assets/js/pages/chart/morris/morris_home_data.js" ></script>
-    
-    <!-- end js include path -->
   </body>
 </html>
