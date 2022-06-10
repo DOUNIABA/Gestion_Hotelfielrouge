@@ -1,8 +1,10 @@
-
-
+<?php
+require_once('../database/DB.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>   
+    <head>
+   
               <style>
 .form-control1{
     width: 100%;
@@ -36,8 +38,29 @@
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Kairali Resort | Home </title>
-    
-        <!-- <?php require_once'./css_includes.php'?> -->
+        !-- 
+        <!-- Icon css link -->
+        <link href="../views/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/flaticon.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="../views/assets/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Rev slider css -->
+        <link href="../views/assets/css/settings.css" rel="stylesheet">
+        <link href="../views/assets/css/layers.css" rel="stylesheet">
+        <link href="../views/assets/css/navigation.css" rel="stylesheet">
+        <link href="../views/assets/css/animate.css" rel="stylesheet">
+        
+        <!-- Extra plugin css -->
+        <link href="../views/assets/css/magnific-popup.css" rel="stylesheet">
+        <link href="../views/assets/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="../views/assets/css/bootstrap-select.css" rel="stylesheet">
+        <link href="../views/assets/css/simpleLightbox.css" rel="stylesheet">
+        
+        <link href="../views/assets/css/style.css" rel="stylesheet">
+        <link href="../views/assets/css/responsive.css" rel="stylesheet">
 
  </head>
     <body>
@@ -65,6 +88,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="header_menu">
                 <nav class="navbar navbar-default">
                     <div class="container">
@@ -79,7 +104,7 @@
                             <a class="navbar-brand" href="#">
                                
                        <img src="img/logo22.png" alt="">
-                                <img src="../img/home-slider/logo22.png" alt=""> 
+                                <img src="../views/assets/img/home-slider/logo22.png" alt=""> 
                             </a>
                         </div>
 
@@ -98,8 +123,7 @@
                                     <a class="book_now_btn" href="room.php">Reservez dés maintenant</a>
                                 </li>
                                 <li class="book_btn">
-                                        <a class="connexion book_now_btn bg-success border-success" href="signup.php">connexion</a> 
-
+                                    <a class="book_now_btn" href="room.php">Reservez dés maintenant</a>
                                 </li>
 
                             </ul>
@@ -124,49 +148,7 @@
                     
                     <h4 class="book_single_one"><font color="#242424" size="5px" >BIENVENUE CHEZ <br> <font color="#242424" size="6px"> KAIRALI RESORT</font></font></h4>
                     <h4 class="book_single_text"><font color="#242424" size="6px">Reserve ta chambre</font></h4>
-                    <div class="book_table_inner row m0">
-                        <div class="book_table_item">
-                            
-                            <div class="input-append date form_datetime">
-                                <form action="function/availability.php?redirect=room.php&id=true&page=index.php"  method="post">
-                                <input size="16" type="text" name="arrival" placeholder="Arrival Date" required readonly>                       
-                                <span class="add-on"><ion-icon name="calendar-outline"></ion-icon>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="book_table_item">
-                            <div class="input-append date form_datetime">
-                                <input size="16" type="text" name="departure"  placeholder="Departure Date" required readonly>
-                                <span class="add-on"><ion-icon name="calendar-outline"></ion-icon>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="book_table_item">
-                            <select class="form-control1" type="number" name="adults" placeholder="Adults"  required >
-                                <option value="" >Adultes</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        <div class="book_table_item">
-                            <select class="form-control1" name="children" required >
-                                <option value="">Enfant</option>
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-                        <div class="book_table_item">
-                            
-
-                           <a type="submit" class="book_now_btn"><input type="submit" class="astext" value="vérifier la disponibilité" ></a>
-
-                            
-                        </div>
+                    
                     </form>
                     </div>
                 </div>
@@ -182,14 +164,14 @@
 
                         <div class="introduction_img" style="padding-top:6%; ">
 
-                            <img src="<?php echo getAsset('img/TEST3.png') ?>" alt="">
+                            <img src="../views/assets/img/TEST3.png" alt="">
                             <div class="introduction_left_text">           
                             <h6></h6><br>
                             <h4>LOCATION</h4>
                             <p>Kakkadampoyil is situated in Koodaranhi Panchayat in Kozhikode District. This hill top village is one of the coolest tourist destination in Malabar region. It is about 15 km from Koodaranhi, 19 km from Thiruvambady and 24 km from the Nilambur. Calicut city is about 50 km from here. There are many indigenous tribal groups in this area. 
                                 It is set high on the Western Ghats, with altitudes ranging from 700 ft to 2100 ft. Kozhippara waterfalls is situated near by here. 
                                 KSRTC Buses are running services from Calicut and have few buses from Thiruvambady and Nilambur towns. There is also a continuous Jeep service from Koodaranhi town to Kakkadampoyil</p>
-                            <img src="<?php echo getAsset('img/Safei.png') ?>"alt="">
+                            <img src="../views/assets/img/Safei.png" alt="">
                         </div>
                         
                         </div>
@@ -252,19 +234,19 @@
                     <div class="col-md-7">
                         <div class="choose_resot_slider owl-carousel">
                             <div class="item">
-                                <img src="<?php echo getAsset('img/resort-1.png') ?>" alt="">
+                                <img src="../views/assets/img/resot-1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img src="<?php echo getAsset('img/resort-2.png') ?>" alt="">
+                                <img src="../views/assets/img/resot-2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img src=""<?php echo getAsset('img/resort-3.png') ?>" alt="">
+                                <img src="../views/assets/img/resot-3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img src=""<?php echo getAsset('img/resort-4.png') ?>" alt="">
+                                <img src="../views/assets/img/resot-4.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img src=""<?php echo getAsset('img/resort-5.png') ?>" alt="">
+                                <img src="../views/assets/img/resot-5.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -291,7 +273,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="explor_item">
                             <a href="room-details.php?id=1" class="room_image">
-                                <img src="<?php echo getAsset('img/room-1.png') ?>" alt="">
+                                <img src="views/assets/img/room-2.jpg" alt="">
                             </a>
                             <div class="explor_text">
                                 <a href="room-details.php?id=1"><h4>Economy</h4></a>
@@ -315,7 +297,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="explor_item">
                             <a href="room-details.php?id=1" class="room_image">
-                                <img src="<?php echo getAsset('img/room-3.png') ?>" alt="">
+                                <img src="../views/assets/img/room-2.jpg" alt="">
                             </a>
                             <div class="explor_text">
                                 <a href="room-details.php?id=1"><h4>Economy</h4></a>
@@ -342,7 +324,7 @@
                         <div class="col-md-4 col-sm-6">
                         <div class="explor_item">
                             <a href="room-details.php?id=2" class="room_image">
-                                <img src="<?php echo getAsset('img/room-.png') ?>" alt="">
+                                <img src="../views/assets/img/room-2.jpg" alt="">
                             </a>
                             <div class="explor_text">
                                 <a href="room-details.php?id=2"><h4>Standard</h4></a>
@@ -386,7 +368,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-xs-6">
-                            <aside class="f_widget about_widgRet">
+                            <aside class="f_widget about_widget">
 
                                 <img src="" alt="">
                                 <div class="ab_wd_list">
@@ -442,7 +424,9 @@
                                </ul>
                                         </div>
                                     </div>
-                                </div>   
+                                </div>
+                                
+                                         
                                 <div class="book_now_area">
                                     <a class="book_now_btn" href="function/booknow.php">Book now</a>
                                 </div>
@@ -481,7 +465,7 @@
                                     <h3>Payments</h3>
                                 </div>
                                 <ul>                               
-                                    <li><a href=""><img src="img/Credit-Card.jpg" style="width:70px ;"></a></li>
+                                    <li><a href=""><img src="../views/assets/img/Credit-Card.jpg" style="width:70px ;"></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -501,6 +485,22 @@
         </footer>
         <!--================End Search Box Area =================-->
         
-   <?php require_once'./js_includes.php' ?>
-    </body>
+
+        
+        <script src="../views/js/jquery-2.2.4.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../views/js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="../views/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../views/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../views/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="../views/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../views/vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../views/vendors/counterup/waypoints.min.js"></script>
+        <script src="../views/vendors/counterup/jquery.counterup.min.js"></script>
+        <script src="../views/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../views/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="../views/vendors/bootstrap-selector/bootstrap-select.js"></script>
+        <script src="../views/vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../views/js/theme.js"></script>    </body>
 </html>
