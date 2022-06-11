@@ -8,7 +8,7 @@ require_once('./autoload.php');
 require_once('./controllers/HomeController.php');
 
 $home =new HomeController();
-$page=['dashboard','homee','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation',''];
+$page=['dashboard','home','destination','contact','about','services','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation',''];
 
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$page)){

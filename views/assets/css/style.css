@@ -646,9 +646,6 @@
     content: "\f094"
 }
 
-.icon-phone:before {
-    content: "\f095"
-}
 
 .icon-square-o:before {
     content: "\f096"
@@ -6573,16 +6570,8 @@
     -moz-osx-font-smoothing: grayscale
 }
 
-.flaticon-trekking:before {
-    content: "\f100"
-}
-
 .flaticon-map:before {
     content: "\f101"
-}
-
-.flaticon-suitcase:before {
-    content: "\f102"
 }
 
 .flaticon-island:before {
