@@ -1,16 +1,17 @@
 <?php
 
-if (isset($_POST['id'])) {
 
-$existeClient = new ClientController();
-$clients=$existeClient->getOneClient();
-}
+$client = new ClientController();
+$client=$client->getOneClient();
 
-if (isset($_POST['submit'])) {
+
+ 
+if (isset($_POST['update'])) {
 
     $existeClient = new ClientController();
-    $clients=$existeClient->ModifierClient();
+    $cliente=$existeClient->ModifierClient();
     }
+
 
 
 ?>
@@ -89,7 +90,7 @@ if (isset($_POST['submit'])) {
                             </form>
                         </div>
                     </div>
-
+''
                 </nav>
                 <div class="container-fluid px-4">
                     <div class="row ">
@@ -97,34 +98,37 @@ if (isset($_POST['submit'])) {
                             <h1 class="fs-4 ">modifier un Client</h1>
                         </div>
                         <div>
+                         
                             <article class="entry">
                                 <div class="card bg-light shadow p-4">
-                                    <form action="" method="post" class="php-email-form">
+                                    <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
-                  
+                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?> required>
+
                                           <div class="col-md-6">
-                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $clients->name;?> required>
+                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?> required>
                                           </div>
                                           <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $clients->email;?> required>
+                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?> required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $clients->phone;?> required>
+                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?> required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $clients->genre;?> required>
+                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?> required>
                                           </div>
                   
                                           <div class="col-md-12">
-                                            <textarea class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $clients->adress;?> required></textarea>
+                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?> required>
                                           </div>
-                  
+                                       
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" name="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            <button type="submit" name="update"class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit 
                                             </button>
                                           </div>
+                                          
                   
                                         </div>
                                       </form>

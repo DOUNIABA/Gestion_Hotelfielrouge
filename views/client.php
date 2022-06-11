@@ -104,6 +104,8 @@ $clients=$data->getAllClients();
                                     foreach($clients as $client){
                                     ?>
                                     <tr>
+                                    <td hidden ><?php echo $client['id'];?></td>
+
                                         <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
                                         <td><?php echo $client['name'];?></td>
                                         <td><?php echo $client['email'];?></td>
