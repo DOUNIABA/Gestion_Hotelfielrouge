@@ -1,8 +1,7 @@
 <?php
-  if(isset($_POST['login'])){
-    $newuser = new utilisateurController();
-    $users = $newuser->login(); 
-   }
+$data = new ClientController();
+$clients=$data->getAllClients();
+
 ?>
 
 <!DOCTYPE html>
@@ -85,12 +84,12 @@
                             </div>
                         </div>
                         <div class=" table-responsive-sm table-responsive-md">
+                            <a href=""></a>
                             <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
                                 <thead>
                                     <tr>
                                         <th> </th>
-                                        <th>Nom</th>
-                                        <th>Prénom</th>
+                                        <th>Nom Complet</th>
                                         <th>Email</th>
                                         <th>Adresse</th>
                                         <th>Téle</th>
@@ -101,42 +100,32 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
+                                    <?php
+                                    foreach($clients as $client){
+                                    ?>
                                     <tr>
                                         <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <i class="fas fa-pen mx-4 "></i></td>
-                                        <td> <i class="fas fa-trash  "></i></td>
+                                        <td><?php echo $client['name'];?></td>
+                                        <td><?php echo $client['email'];?></td>
+                                        <td><?php echo $client['adress'];?></td>
+                                        <td><?php echo $client['phone'];?></td>
+                                        <td><?php echo $client['genre'];?></td>
+
+                                        <td> <form method="post" class="mr-1" action="update">
+                                            <input type="hidden" name="id" value="<?php echo $client['id'];?>"> 
+                                            <button class="btn btn-sm ">
+                                                <i class="fas fa-pen mx-4 "> </i></button></form>
+                                       
+                                       <td> <form method="post" class="mr-1" action="delete">
+                                            <input type="hidden" name="id" value="<?php echo $client['id'];?>"> 
+                                            <button class="btn btn-sm ">
+                                            <i class="fas fa-trash  "></i></button></form>
+
+                                       </td>
                                     </tr>
-                                    <tr>
-                                        <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <i class="fas fa-pen mx-4 "></i></td>
-                                        <td> <i class="fas fa-trash  "></i></td>
-                                    </tr>
-                                   
-                                    <tr>
-                                        <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td> <i class="fas fa-pen mx-4 "></i></td>
-                                        <td> <i class="fas fa-trash  "></i></td>
-                                    </tr>
-                                  
+
+                                     
+                                <?php }; ?>
                                 </tbody>
                             </table>
                         </div>

@@ -1,10 +1,16 @@
 <?php
 
+if (isset($_POST['id'])) {
+
+$existeClient = new ClientController();
+$clients=$existeClient->getOneClient();
+}
+
 if (isset($_POST['submit'])) {
 
-$newClient = new ClientController();
-$clients=$newClient->AjouterClient();
-}
+    $existeClient = new ClientController();
+    $clients=$existeClient->ModifierClient();
+    }
 
 
 ?>
@@ -88,7 +94,7 @@ $clients=$newClient->AjouterClient();
                 <div class="container-fluid px-4">
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
-                            <h1 class="fs-4 ">Ajouter un Client</h1>
+                            <h1 class="fs-4 ">modifier un Client</h1>
                         </div>
                         <div>
                             <article class="entry">
@@ -97,23 +103,22 @@ $clients=$newClient->AjouterClient();
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $clients->name;?> required>
                                           </div>
                                           <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" required>
+                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $clients->email;?> required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" required>
+                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $clients->phone;?> required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" required>
+                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $clients->genre;?> required>
                                           </div>
                   
                                           <div class="col-md-12">
-                                            <textarea class="form-control" name="adress" rows="6" placeholder="Votre Adresse"
-                                              required></textarea>
+                                            <textarea class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $clients->adress;?> required></textarea>
                                           </div>
                   
                                           <div class="col-md-12 text-center">

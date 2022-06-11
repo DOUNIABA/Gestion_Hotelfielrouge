@@ -1,5 +1,5 @@
 <?php
-// require_once('./app/require.php');
+require_once('./bootstrap.php');
 spl_autoload_register('autoload');
 function autoload($class){
     $array_paths =array('database/','app/classes','models/','controllers/');
