@@ -18,30 +18,27 @@
 <body>
     <main>
         <div class="d-flex" id="dashboard">
-        <div class="bg  " id="sidebar-dashboard" style="    height: 100vh;">
+        <div class="bg  " id="sidebar-dashboard" style=" background:#94B49F  ; height: 100vh;">
                 <a href="index.html" class="logo my-3   d-flex align-items-center">
-                    <img src="views/img/logo.png" alt="">
+                    <img src="" alt="">
                     <span>
                     </span>
                 </a>
                 <hr class="mb-3 ">
                 <div class="list-group  d-flex ">
 
-                    <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6  "
-                        style="background:#DD10C9 ;">
-                        <img src="views/img/home.png"> Accueil</a>
-                   
-                    <a href="client"
-                        class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 bg-transparent my-2   ">
-                        <img src="views/img/graduate-cap.png">Client</a>
-                    <a href="chambre" class="list-group-item mx-2 border-0 fw-bold fs-6 bg-transparent my-2 p-2 ">
-                        <img src="views/img/it.png">CHAMBRE</a>
+                <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6">
+                        <img src="views/img/home.png"> Accueil</a>                   
+                    <a href="client" class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 my-2">
+                        <img src="views/img/user.png">Client</a>
+                    <a href="chambre" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
+                        <img src="views/img/chambre.png">CHAMBRE</a>
                     <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
                         <img src="views/img/booking.png">Réservation</a>
                     <a href="#" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6   bg-transparent my-2 p-2 ">
+                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
                         <img src="views/img/user.png"> Profile</a>
                     <a href="index.html"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
@@ -76,7 +73,7 @@
                             <div>
                                 <i class="fas fa-sort mx-3  "></i>
                                 <a href="./ajouterChambre"> <button type="button" class="btn fw-bold  fs-6"
-                                        style="background:#DD10C9 ; color: #012970;">Ajouter nouveau chambre</button></a>
+                                        style="background:#ECB390 ; color: #012970;">Ajouter nouvelle chambre</button></a>
                             </div>
                         </div>
                         <div class=" table-responsive-sm table-responsive-md">
@@ -127,8 +124,6 @@
                                         <td> <i class="fas fa-pen mx-4 "></i></td>
                                         <td> <i class="fas fa-trash  "></i></td>
                                     </tr>
-                                   
-                                  
                                 </tbody>
                             </table>
                         </div>

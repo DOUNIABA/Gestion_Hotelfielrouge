@@ -18,28 +18,33 @@
 <body>
     <main>
         <div class="d-flex" id="dashboard">
-            <div class="bg  " id="sidebar-dashboard" style="background: #94B49F;height: 100vh;">
+            <div class="bg  " id="sidebar-dashboard">
                 <a href="index.html" class="logo my-3   d-flex align-items-center">
                     <img src="" alt="">
                     <span>
                     </span>
                 </a>
                 <hr class="mb-3 ">
-                <div class="list-group d-flex ">
+                <div class="list-group  d-flex ">
 
-                    <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6">
-                        <img src="views/img/home.png"> Accueil</a>                   
-                    <a href="client" class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 my-2">
+                    <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6  "
+                        style="background:#ECB390 ;">
+                        <img src="views/img/home.png"> Accueil</a>
+                    
+                    <a href="client"
+                        class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 bg-transparent my-2   ">
                         <img src="views/img/user.png">Client</a>
-                    <a href="chambre" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
+
+                        <a href="chambre" class="list-group-item mx-2 border-0 fw-bold fs-6 bg-transparent my-2 p-2 ">
                         <img src="views/img/chambre.png">CHAMBRE</a>
+
                     <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
                         <img src="views/img/booking.png">Réservation</a>
                     <a href="#" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
-                
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
-                        <img src="views/img/user.png"> Profile</a>
+                  
+                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6   bg-transparent my-2 p-2 ">
+                        <img src="views/img/settings (1).png"> profile</a>
                     <a href="index.html"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Logout <i class="fas fa-sign-out-alt"></i> </a>
@@ -55,6 +60,7 @@
                         <h5>Accueil</h5>
                     </div>
 
+
                     <div class="navbar-nav ms-auto">
                         <div class="nav-item ">
                             <form class="d-flex  justify-content-end mt-3 ">
@@ -62,46 +68,61 @@
                                     aria-label="Search">
                                 <a href="./profile" class="mx-3 "> <img src="views/img/user (1).png"
                                         class="mx-3 w-75"></a>
+
                             </form>
                         </div>
                     </div>
+
                 </nav>
                 <div class="container-fluid px-4">
-                    <div class="row my-2 d-flex justify-content-center">
-                        <div class="col-lg-4 col-md-5 mb-4 ">
-                            <div class="p-3 d-flex justify-content-around align-items-center card_client ">
-                                <div>
-                                <img src="views/img/user.png">
-                                    <p class="fs-5 mb-5 Secondary-text">Clients</p>
-                                </div>
-                                <h1 class="fs-5 mt-5">243</h1>
-                            </div>
+                    <div class="row ">
+                        <div class=" d-flex justify-content-between my-3">
+                            <h1 class="fs-4 ">Ajouter une Réservation</h1>
                         </div>
-                        <div class="col-lg-4  col-md-5  mb-4 ">
-                            <div class="p-3  d-flex justify-content-around align-items-center card_chambre ">
-                                <div>
-                                    <img src="views/img/chambre.png">
-                                    <p class="fs-5 mb-5 Secondary-text">Chambres</p>
-                                </div>
-                                <h1 class="fs-5 mt-5 text-white">13</h1>
-                            </div>
-                        </div>
-                        <div class=" col-lg-4 col-md-5  mb-4">
-                            <div class="p-3   d-flex justify-content-around align-items-center card_reservation ">
-                                <div>
-                                    <img src="views/img/bookingCart.png">
+                        <div>
+                            <article class="entry">
+                                <div class="card bg-light shadow p-4">
+                                    <form action="forms/contact.php" method="post" class="php-email-form">
+                                        <div class="row gy-4">
+                  
+                                          <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Numéro de chambre" required>
+                                          </div>
 
-                                    <p class="fs-5 mb-5 Secondary-text">Réservations</p>
+                                          <div class="col-md-6">
+                                            <input type="text" name="prenom" class="form-control" placeholder="Nom" required>
+                                          </div>
+                  
+                                          <div class="col-md-6 ">
+                                            <input type="text" class="form-control" name="prix" placeholder="Check In" required>
+                                          </div>
+                  
+                                          <div class="col-md-6">
+                                            <input type="text" class="form-control" name="type" placeholder="Check Out" required>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                            <input type="text" class="form-control" name="description" placeholder="Status" required>
+                                          </div>
+                  
+                                          <div class="col-md-6">
+                                            <input type="text" class="form-control" name="nimero" placeholder="Type chambre" required>
+                                          </div>
+                  
+                                          <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            </button>
+                                          </div>
+                  
+                                        </div>
+                                      </form>
                                 </div>
-                                <h1 class="fs-5 mt-5">556</h1>
-                            </div>
+
+                            </article>
                         </div>
-                       
                     </div>
-                 
                 </div>
             </div>
-
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
             <script>

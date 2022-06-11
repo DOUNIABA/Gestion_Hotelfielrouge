@@ -3,6 +3,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   }
+
 .bg{
   border-radius: 2%;
   background: #ffffff;
@@ -19,7 +20,8 @@ body{
  }
 .list-group a:hover{
    background: #FCF8E8 !important;
-   color: #012970;
+   color: #243A73 ;
+
  }  
  .list-group img{
  margin-left: 10px;
@@ -37,44 +39,40 @@ body{
  #menu-toggle {
     cursor: pointer;
   }
- .card_student{
+ .card_client{
    margin-top: 5px;
-   background: #fff;
+   background: #FCF8E8;
    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
  }
- .card_student img{
+ .card_client img{
   color: #fff ;
  }
-.card_cours{
+
+ #sidebar-dashboard{
+   height: 100vh;
+
+ }
+.card_chambre{
   margin-top: 5px;
-  background: #FCF8E8;
+  background: #ECB390;
   color: #fff;
   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.card_cours i{
+.card_chambre i{
   color:  #fff;
  }
-.card_payment{
+.card_reservation{
   margin-top: 5px;
   background: #fff;
   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
  }
- .card_payment i{
+ .card_reservation i{
   color: #012970;
  }
- .card_user{
-  margin-top: 5px;
-  background: #012970;
-  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;}
-  
- .card_user i {
-  color: #fff;
- }
- 
+
  td i{
   color: #012970 ;
 }
@@ -117,7 +115,6 @@ a {
  .bt{
    background: #f6f9ff;
  }
- 
  .admin h6{
   font-size: 18px;
   font-weight: 600;
