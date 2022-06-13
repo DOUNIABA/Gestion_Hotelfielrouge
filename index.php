@@ -4,11 +4,12 @@
 // ||basename($_SERVER['REQUEST_URI'])==" "||basename($_SERVER['REQUEST_URI'])==" "){
 //     include('views/includes/sidebar.php') ;
 // }
+include('views/includes/header.php') ;
 require_once('./autoload.php');
 require_once('./controllers/HomeController.php');
 
 $home =new HomeController();
-$page=['dashboard','home','destination','contact','about','services','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation','update','delete'];
+$page=['dashboard','home','destination','contact','about','services','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation','update','delete','deletechambre','updatechambre','account'];
 
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$page)){
@@ -20,3 +21,6 @@ if(isset($_GET['page'])){
 else{
         $home->index('signup');
     }
+
+    include('views/includes/footer.php') ;
+

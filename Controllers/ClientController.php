@@ -2,7 +2,6 @@
 
 class ClientController
 {
-
     public function getAllClients(){
       $clients=Client::getAll();
       return $clients;
@@ -11,6 +10,7 @@ class ClientController
     public function AjouterClient(){
 if(isset($_POST['submit'])){
   $data = array(
+    'image'=>$_POST['image'],
     'name'=>$_POST['name'],
     'email'=>$_POST['email'],    
     'genre'=>$_POST['genre'],
@@ -26,7 +26,8 @@ if(isset($_POST['submit'])){
     echo $resultat;
   }
 }
-    }public function ModifierClient(){
+    }
+    public function ModifierClient(){
       if(isset($_POST['update'])){
       
         $resultat = Client::update($_POST['id'],$_POST['name'],$_POST['email'],$_POST['genre'],$_POST['telephone'],$_POST['adress']);
@@ -36,8 +37,7 @@ if(isset($_POST['submit'])){
         }else {
           echo $resultat;
         }
-      }
-      
+      }     
           }
 
     public function getOneClient()
@@ -59,7 +59,6 @@ if(isset($_POST['submit'])){
           }
         }
       }
-
 
 }
 ?>

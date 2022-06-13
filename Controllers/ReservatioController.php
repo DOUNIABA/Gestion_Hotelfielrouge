@@ -1,10 +1,8 @@
-
 <?php 
 class ReservationController{
-    public function getALL(){
+    public function getAllreservation(){
         $resrevration= Reservation::getAll();
         return $resrevration;
     }
 }
-
-?>
+?> 

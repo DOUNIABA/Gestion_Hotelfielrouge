@@ -1,3 +1,10 @@
+<?php
+if (isset($_POST['submit'])) {
+$newChambre = new ChambreController();
+$newChambre->addChambre();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,35 +89,32 @@
                         <div>
                             <article class="entry">
                                 <div class="card bg-light shadow p-4">
-                                    <form action="forms/contact.php" method="post" class="php-email-form">
+                                    <form action="" method="post" class="php-email-form">
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Nom" required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" name="prenom" class="form-control" placeholder="Nom chambre" required>
+                                            <input type="text" name="prix" class="form-control" placeholder="Prix chambre" required>
                                           </div>
                   
                                           <div class="col-md-6 ">
-                                            <input type="text" class="form-control" name="prix" placeholder="Prix" required>
+                                            <input type="text" class="form-control" name="type" placeholder="Type chambre" required>
                                           </div>
                   
-                                          <div class="col-md-6">
-                                            <input type="text" class="form-control" name="type" placeholder="Type" required>
-                                          </div>
-
                                           <div class="col-md-6">
                                             <input type="text" class="form-control" name="description" placeholder="Description" required>
                                           </div>
-                  
+
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="nimero" placeholder="Numéro chambre" required>
+                                            <input type="text" class="form-control" name="num_chambre" placeholder="Numéro de chambre" required>
                                           </div>
                   
+                  
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            <button type="submit" name="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
                                             </button>
                                           </div>
                   

@@ -1,10 +1,3 @@
-<?php
-$data = new ChambreController();
-$chambres=$data->getAllChambre();
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,11 +69,11 @@ $chambres=$data->getAllChambre();
                 </nav>
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
-                            <h1 class="fs-4 ">Liste des chambres</h1>
+                            <h1 class="fs-4 ">Liste des reservations</h1>
                             <div>
                                 <i class="fas fa-sort mx-3  "></i>
-                                <a href="./ajouterChambre"> <button type="button" class="btn fw-bold  fs-6"
-                                        style="background:#ECB390 ; color: #012970;">Ajouter nouvelle chambre</button></a>
+                                <a href="./ajouterReservation"> <button type="button" class="btn fw-bold  fs-6"
+                                        style="background:#ECB390 ; color: #012970;">Ajouter nouvelle reservation</button></a>
                             </div>
                         </div>
                         <div class=" table-responsive-sm table-responsive-md">
@@ -89,10 +82,14 @@ $chambres=$data->getAllChambre();
                                     <tr>
                                         <th> </th>
                                         <th>Nom </th>
-                                                <th>Prix</th>
-                                                <th>Type</th>
-                                                <th>Description</th>
-                                                <th>Numéro de chambre</th>
+                                        <th>Télé </th>
+                                        <th>Email </th>
+                                        <th>Check IN </th>
+                                        <th>Check OUT</th>
+                                        <th>STATUS</th>
+                                        <th>Type de chambre</th>
+                                        <th>Payement </th>
+                                        <th>Montant </th>
 
                                         <th></th>
                                         <th></th>
@@ -101,24 +98,28 @@ $chambres=$data->getAllChambre();
                                 <tbody>
                                     
                                 <?php
-                                    foreach($chambres as $chambre){
+                                    foreach($reservations as $reservation){
                                     ?>
                                     
                                     <tr>
                                         <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
-                                        <td><?php echo $chambre['name']?></td>
-                                        <td><?php echo $chambre['prix']?></td>
-                                        <td><?php echo $chambre['type']?></td>
-                                        <td><?php echo $chambre['description']?></td>
-                                        <td><?php echo $chambre['num_chambre']?></td>
+                                        <td><?php echo $reservation['name']?></td>
+                                        <td><?php echo $reservation['phone']?></td>
+                                        <td><?php echo $reservation['email']?></td>
+                                        <td><?php echo $reservation['chheckin']?></td>
+                                        <td><?php echo $reservation['checkOut']?></td>
+                                        <td><?php echo $reservation['montant']?></td>
+                                        <td><?php echo $reservation['status']?></td>
+                                        <td><?php echo $reservation['payement']?></td>
+                                        <td><?php echo $reservation['type_chambre']?></td>
 
-                                        <td> <form method="post" class="mr-1" action="updatechambre">
-                                            <input type="hidden" name="id" value="<?php echo $chambre['id'];?>"> 
+                                        <td> <form method="post" class="mr-1" action="updatereservation">
+                                            <input type="hidden" name="id" value="<?php echo $reservation['id'];?>"> 
                                             <button class="btn btn-sm ">
                                                 <i class="fas fa-pen mx-4 "> </i></button></form>
                                        
-                                       <td> <form method="post" class="mr-1" action="deletechambre">
-                                            <input type="hidden" name="id" value="<?php echo $chambre['id'];?>"> 
+                                       <td> <form method="post" class="mr-1" action="deletereservation">
+                                            <input type="hidden" name="id" value="<?php echo $reservation['id'];?>"> 
                                             <button class="btn btn-sm ">
                                             <i class="fas fa-trash  "></i></button></form>
 

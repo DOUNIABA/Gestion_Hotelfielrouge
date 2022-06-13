@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Work+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../views/assets/css/style.css"
-    />
+    <link rel="stylesheet" href="./views/assets/css/style.css"/>
     <title>Hotel</title>
   
 </head>
@@ -33,12 +32,12 @@
                         </div>
                         <div class="col-8 text-center">
                             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                                <li class="active"><a href="index.html">Accueil</a></li>
-                                <li><a href="destination.html">ROOMS</a>                                
+                                <li class="active"><a href="home">Accueil</a></li>
+                                <li><a href="destination">ROOMS</a>                                
                                 </li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="services">Services</a></li>
+                                <li><a href="about">About</a></li>
+                                <li><a href="contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="col-2 text-end">
@@ -56,12 +55,12 @@
             </div>
         </div>
     </nav>
-    <div class="hero overlay" style="background-image:url(./assets/images/backk.jpg)">
+    <div class="hero overlay" style="background-image:url(././views/assets/images/backk.jpg)">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h1 class="heading mb-5 text-white" data-aos="fade-up">Une fois par an, allez dans un endroit où vous n'êtes jamais allé.</h1>
-                    <a href="https://www.youtube.com/watch?v=mwtbEGNABWU" class="btn btn-primary glightbox" data-aos="fade-up" data-aos-delay="100">See video</a>
+                    <h1 class="heading mb-5 text-white" >Une fois par an, allez dans un endroit où vous n'êtes jamais allé.</h1>
+                    <a href="ajouterReservation" class="btn btn-primary" >Reservez Dés maintenat</a>
                 </div>
             </div>
         </div>
@@ -70,14 +69,14 @@
     <div class="section sec-features bg-light">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-6" data-aos="fade-up">
+                <div class="col-lg-6" >
                     <h2 class="heading">Nos Services</h2>
                 </div>
                 <div class="col-lg-6 text-end">
                 </div>
             </div>
         </div>
-        <div class="features-slider-wrap" data-aos="fade-up" data-aos-delay="100">
+        <div class="features-slider-wrap" >
             <div class="features-slider" id="features-slider">
                 <div class="item">
                     <div class="feature bg-color-1">
@@ -110,7 +109,7 @@
     <div class="section ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-7" >
                     <div id="features-slider-nav">
                         <button class="btn btn-primary" class="prev" data-controls="prev">Prev</button>
                         <button class="btn btn-primary" class="next" data-controls="next">Next</button>
@@ -123,7 +122,7 @@
         <div class="container">
             <div class="row g-5 justify-content-between">
                 <div class="col-lg-6 has-bg" data-aos="fade-right">
-                    <img src="../views/assets/images/background1.jpg" alt="Image" class="img-fluid img-box-shadow rounded">
+                    <img src="././views/assets/images/background1.jpg" alt="Image" class="img-fluid img-box-shadow rounded">
                 </div>
                 <div class="col-lg-4 align-self-center" data-aos="fade-left" data-aos-delay="100">
                     <h2 class="heading mb-4">About Hotell</h2>
@@ -137,12 +136,12 @@
     <div class="section sec-posts">
         <div class="container">
             <div class="row mb-4">
-                <div class="col-lg-7" data-aos="fade-up">
+                <div class="col-lg-7" >
                     <h2 class="heading mb-4">Blog Posts</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12">
                     <div class="post-slider-wrap">
                         <div id="post-slider-nav">
                             <button class="btn btn-primary" class="prev" data-controls="prev">Prev</button>
@@ -152,44 +151,52 @@
                             
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="../views/assets/images/item2.jpg" alt="Image" class="img-fluid"></a>
+                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item2.jpg" alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
-                                        <h3><a href="#">Far far away, behind the word mountains, far from the countries</a></h3>
+                                        <p>Type:Single<br>
+                                        prix:       <br>                 
+                                        Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="#" class="more">Read More</a>
+                                            <a href="" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="../views/assets/images/item3.jpg" alt="Image" class="img-fluid"></a>
+                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item3.jpg" alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
-                                        <h3><a href="#">Far far away, behind the word mountains, far from the countries</a></h3>
+                                        <p>Type:Double<br>
+                                        prix:       <br>                 
+                                        Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="#" class="more">Read More</a>
+                                            <a href="" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="../views/assets/images/item4.jpg" alt="Image" class="img-fluid"></a>
+                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item4.jpg" alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
-                                        <h3><a href="#">Far far away, behind the word mountains, far from the countries</a></h3>
+                                        <p>Type:Twins<br>
+                                        prix:       <br>                 
+                                        Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="#" class="more">Read More</a>
+                                            <a href="" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="../views/assets/images/background1.jpg" alt="Image" class="img-fluid"></a>
+                                    <a href="#" class="thumbnail"><img src="././views/assets/images/background1.jpg" alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
-                                        <h3><a href="#">Far far away, behind the word mountains, far from the countries</a></h3>
+                                        <p>Type:Deluxe<br>
+                                        prix:       <br>                 
+                                        Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="#" class="more">Read More</a>
+                                            <a href="" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,57 +226,59 @@
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/ITEM10.jpg" alt="Image" class="img-fluid">
+                        <img src="././views/assets/images/ITEM10.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/elem3.jpg" alt="Image" class="img-fluid">
+                        <img src="././views/assets/images/elem3.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/ITEM1.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/ITEM1.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/elem2.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/elem2.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/elem8.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/elem8.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/ITEM8.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/ITEM8.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/elem1.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/elem1.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
                 <div class="item">
                     <a class="instagram-item">
                         <span class="icon-instagram"></span>
-                        <img src="../views/assets/images/elem7.jpg" alt="Image" class="img-fluid">
+                        <img src="./views/assets/images/elem7.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                
             </div>
         </div>
     </div>
-    <div class="site-footer bg-light">
+
+
+<div class="site-footer bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
@@ -344,10 +353,10 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/flatpickr.min.js"></script>
-    <script src="js/glightbox.min.js%2baos.js%2bnavbar.js%2bcounter.js%2bcustom.js.pagespeed.jc.oPXsBT0gNp.js"></script>
+    <script src="views/js/bootstrap.bundle.min.js"></script>
+    <script src="views/js/tiny-slider.js"></script>
+    <script src="views/js/flatpickr.min.js"></script>
+    <script src="views/js/glightbox.min.js%2baos.js%2bnavbar.js%2bcounter.js%2bcustom.js.pagespeed.jc.oPXsBT0gNp.js"></script>
     <script>
         eval(mod_pagespeed_JkAIZiki3e);
     </script>
@@ -370,6 +379,7 @@
         crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/hotell/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jun 2022 18:20:13 GMT -->

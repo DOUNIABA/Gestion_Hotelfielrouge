@@ -88,7 +88,9 @@ $clients=$data->getAllClients();
                             <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
                                 <thead>
                                     <tr>
-                                        <th> </th>
+                                    <th> </th>
+
+                                        <th> profile</th>
                                         <th>Nom Complet</th>
                                         <th>Email</th>
                                         <th>Adresse</th>
@@ -105,8 +107,8 @@ $clients=$data->getAllClients();
                                     ?>
                                     <tr>
                                     <td hidden ><?php echo $client['id'];?></td>
-
-                                        <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
+                                    <td> <?php echo $client['image'];?></td>
+                                        <td> <?php echo $client['name'];?></td>
                                         <td><?php echo $client['name'];?></td>
                                         <td><?php echo $client['email'];?></td>
                                         <td><?php echo $client['adress'];?></td>
@@ -125,8 +127,7 @@ $clients=$data->getAllClients();
 
                                        </td>
                                     </tr>
-
-                                     
+                                                                       
                                 <?php }; ?>
                                 </tbody>
                             </table>

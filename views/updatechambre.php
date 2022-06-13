@@ -1,13 +1,13 @@
 <?php
 
 
-$client = new ClientController();
-$client=$client->getOneClient();
+$chambre = new ChambreController();
+$chambre=$chambre->getOneChambre();
 
 if (isset($_POST['update'])) {
 
-    $existeClient = new ClientController();
-    $cliente=$existeClient->ModifierClient();
+    $existeChambre = new ChambreController();
+    $chambres=$existeChambre->ModifierChambre();
     }
 
 
@@ -88,7 +88,6 @@ if (isset($_POST['update'])) {
                             </form>
                         </div>
                     </div>
-''
                 </nav>
                 <div class="container-fluid px-4">
                     <div class="row ">
@@ -101,29 +100,29 @@ if (isset($_POST['update'])) {
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
-                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?> required>
+                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $chambre['id'];?> required>
 
                                           <div class="col-md-6">
-                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?> required>
+                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $chambre['name'];?> required>
                                           </div>
                                           <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?> required>
+                                            <input type="text" class="form-control" name="prix" placeholder="Prix" value=<?php echo $chambre['prix'];?> required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?> required>
+                                            <input type="text" class="form-control" name="type" placeholder="Type chambre" value=<?php echo $chambre['type'];?> required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?> required>
+                                            <input type="text" class="form-control" name="description" placeholder="" value=<?php echo $chambre['description'];?> required>
                                           </div>
                   
                                           <div class="col-md-12">
-                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?> required>
+                                            <input  type="text" class="form-control" name="num_chambre" rows="6" placeholder="Numéro chambre" value=<?php echo $chambre['num_chambre'];?> required>
                                           </div>
                                        
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" name="update"class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit 
+                                            <button type="submit" name="update" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit 
                                             </button>
                                           </div>
                                           

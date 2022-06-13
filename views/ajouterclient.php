@@ -6,7 +6,6 @@ $newClient = new ClientController();
 $clients=$newClient->AjouterClient();
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -95,10 +94,15 @@ $clients=$newClient->AjouterClient();
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="post" class="php-email-form">
                                         <div class="row gy-4">
-                  
+                                        <div class="mb-3">
+                                            <label for="formFileSm" class="form-label">Choisir votre photo</label>
+                                            <input class="form-control form-control-sm" name="image"id="formFileSm" type="file">
+                                            </div>
+                                            
                                           <div class="col-md-6">
                                             <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
                                           </div>
+
                                           <div class="col-md-6 ">
                                             <input type="email" class="form-control" name="email" placeholder="Votre e-mail" required>
                                           </div>
@@ -108,8 +112,14 @@ $clients=$newClient->AjouterClient();
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" required>
-                                          </div>
+
+                                          <select class="form-select form-select-sm" name="genre" aria-label="form-select-lg example">
+                                            <option selected>Genre</option>
+                                            <option value="single">Féminin</option>
+                                            <option value="double">Masculin</option>
+                                 
+                                          </select>                                  
+                                         </div>
                   
                                           <div class="col-md-12">
                                             <textarea class="form-control" name="adress" rows="6" placeholder="Votre Adresse"

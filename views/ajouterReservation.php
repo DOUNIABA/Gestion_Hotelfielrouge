@@ -1,3 +1,10 @@
+<?php
+if (isset($_POST['submit'])) {
+$newReservation = new ReservationController();
+$newReservation->addReservation();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,109 +24,89 @@
 
 <body>
     <main>
-        <div class="d-flex" id="dashboard">
-            <div class="bg  " id="sidebar-dashboard">
-                <a href="index.html" class="logo my-3   d-flex align-items-center">
-                    <img src="" alt="">
-                    <span>
-                    </span>
-                </a>
-                <hr class="mb-3 ">
-                <div class="list-group  d-flex ">
 
-                    <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6  "
-                        style="background:#ECB390 ;">
-                        <img src="views/img/home.png"> Accueil</a>
-                    
-                    <a href="client"
-                        class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 bg-transparent my-2   ">
-                        <img src="views/img/user.png">Client</a>
-
-                        <a href="chambre" class="list-group-item mx-2 border-0 fw-bold fs-6 bg-transparent my-2 p-2 ">
-                        <img src="views/img/chambre.png">CHAMBRE</a>
-
-                    <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
-                        <img src="views/img/booking.png">Réservation</a>
-                    <a href="#" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
-                        <img src="views/img/message.png"> Messages</a>
-                  
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6   bg-transparent my-2 p-2 ">
-                        <img src="views/img/settings (1).png"> profile</a>
-                    <a href="index.html"
-                        class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
-                        Logout <i class="fas fa-sign-out-alt"></i> </a>
-
-                    </ul>
-                </div>
-            </div>
-            <div id="page-content-dashboard" class="bt">
-                <nav class="navbar navbar-expand-lg   py-1 px-4 cont ">
-                    <div class="d-flex align-items-center">
-
-                        <i class="fa fa-bars me-3 " id="menu-toggle"></i>
-                        <h5>Accueil</h5>
-                    </div>
-
-
-                    <div class="navbar-nav ms-auto">
-                        <div class="nav-item ">
-                            <form class="d-flex  justify-content-end mt-3 ">
-                                <input class="form-control me-2 " type="search" placeholder="Search..."
-                                    aria-label="Search">
-                                <a href="./profile" class="mx-3 "> <img src="views/img/user (1).png"
-                                        class="mx-3 w-75"></a>
-
-                            </form>
-                        </div>
-                    </div>
-
-                </nav>
                 <div class="container-fluid px-4">
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
-                            <h1 class="fs-4 ">Ajouter une Réservation</h1>
+                            <h1 class="fs-4 ">Séction de Réservation</h1>
                         </div>
                         <div>
                             <article class="entry">
-                                <div class="card bg-light shadow p-4">
+                                <div class="card bg-light shadow p-4" style="display:flex;">
                                     <form action="forms/contact.php" method="post" class="php-email-form">
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Numéro de chambre" required>
+                                          <label>Nom Complet</label>
+
+                                            <input type="text" name="name" class="form-control" placeholder="Nom" required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" name="prenom" class="form-control" placeholder="Nom" required>
+                                          <label fs-bold>Numéro de téléphone</label>
+
+                                            <input type="text" name="phone" class="form-control" placeholder="Telephone" required>
+                                          </div>
+
+                                          <div class="col-md-6 ">
+                                          <label>Email</label>
+                                            <input type="email" class="form-control" name="prix" placeholder="votre addresse email" required>
                                           </div>
                   
                                           <div class="col-md-6 ">
-                                            <input type="text" class="form-control" name="prix" placeholder="Check In" required>
+                                            <label>Check-in</label>
+                                            <input type="date" class="form-control" name="prix" placeholder="Check In" required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="type" placeholder="Check Out" required>
+                                          <label>Check-Out</label>
+                                            <input type="date" class="form-control" name="type" placeholder="Check Out" required>
                                           </div>
 
-                                          <div class="col-md-6">
-                                            <input type="text" class="form-control" name="description" placeholder="Status" required>
-                                          </div>
-                  
-                                          <div class="col-md-6">
-                                            <input type="text" class="form-control" name="nimero" placeholder="Type chambre" required>
-                                          </div>
+                                      
+                                        <div class="col-md-6">
+                                        <label>Type de chambre</label>
+
+                                          <select class="form-select form-select-sm" aria-label="form-select-lg example">
+                                            <option selected>Choisir votre chambre</option>
+                                            <option value="single">single</option>
+                                            <option value="double">Double</option>
+                                            <option value="twins">Twins</option>
+                                            <option value="twidens">Deluxe</option>
+
+                                          </select>                                  
+                                         </div>
+                                                            
+
                   
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
-                                            </button>
+                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; "><a href="account">Submit
+                                            </a></button>
                                           </div>
                   
                                         </div>
                                       </form>
-                                </div>
+                                      
+                                      <div class="account mb-5" >
+                                      <div class="card text-dark bg-light mb-5" style="max-width: 18rem;">
+                                        <div class="card-header " >tarif des chambres</div>
+                                        <div class="card-body ">
+                                          <ul>
+                                              <li><h5>Single:</h5>400.00/jour</li>
+                                              <li><h5>Double:</h5>800.00/jour</li>
+                                              <li><h5>Deluxe:</h5>1000.00/jour</li>
+                                              <li><h5>Twin:</h5>8000.00/jour</li>
+
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      </div>
+
 
                             </article>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>
