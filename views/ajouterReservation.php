@@ -1,9 +1,9 @@
-
 <?php
-if (isset($_POST['submit'])) {
-$newReservation = new ReservationController();
-$newReservation->addReservation();
-}
+
+$newReservation = new reservationController();
+if($newReservation->add())
+echo "b1" ;
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ $newReservation->addReservation();
                         <div>
                             <article class="entry">
                                 <div class="card bg-light shadow p-4" style="display:flex;">
-                                    <form action="" method="post" class="php-email-form">
+                                    <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
@@ -61,9 +61,8 @@ $newReservation->addReservation();
                   
                                           <div class="col-md-6">
                                           <label>Check-Out</label>
-                                            <input type="date" class="form-control" name="type" placeholder="Check Out" required>
+                                            <input type="date" class="form-control" name="submit" placeholder="Check Out" required>
                                           </div>
-
                                       
                                         <div class="col-md-6">
                                         <label>Type de chambre</label>
@@ -81,7 +80,7 @@ $newReservation->addReservation();
 
                   
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            <button type="submit" name ="addreservation" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
                                             </button>
                                           </div>
                   

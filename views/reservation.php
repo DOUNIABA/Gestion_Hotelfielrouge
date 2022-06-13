@@ -1,6 +1,6 @@
 <?php
-$data = new ReservationController();
-$Reservations = $data->getAllReservations();
+$data = new reservationController();
+$Reservations = $data->getAll();
 ?>
 
 <!DOCTYPE html>
@@ -112,6 +112,7 @@ $Reservations = $data->getAllReservations();
                                     <td><?php echo $reservation['checkin']?></td>
                                     <td><?php echo $reservation['checkout']?></td>
                                     <td><?php echo $reservation['montant']?></td>
+
 
                                     <td>
                                         <form method="post" class="mr-1" action="updatereservation">
