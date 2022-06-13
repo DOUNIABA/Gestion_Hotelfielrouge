@@ -67,14 +67,12 @@ $newChambre->addChambre();
                         <h5>Accueil</h5>
                     </div>
 
-
                     <div class="navbar-nav ms-auto">
                         <div class="nav-item ">
                             <form class="d-flex  justify-content-end mt-3 ">
                                 <input class="form-control me-2 " type="search" placeholder="Search..."
                                     aria-label="Search">
-                                <a href="./profile" class="mx-3 "> <img src="views/img/user (1).png"
-                                        class="mx-3 w-75"></a>
+                                <a href="./profile" class="mx-3 "> <img src="views/img/user (1).png" class="mx-3 w-75"></a>
 
                             </form>
                         </div>
@@ -91,11 +89,7 @@ $newChambre->addChambre();
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="post" class="php-email-form">
                                         <div class="row gy-4">
-                  
-                                          <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Nom" required>
-                                          </div>
-
+                
                                           <div class="col-md-6">
                                             <input type="text" name="prix" class="form-control" placeholder="Prix chambre" required>
                                           </div>
@@ -104,14 +98,14 @@ $newChambre->addChambre();
                                             <input type="text" class="form-control" name="type" placeholder="Type chambre" required>
                                           </div>
                   
-                                          <div class="col-md-6">
-                                            <input type="text" class="form-control" name="description" placeholder="Description" required>
-                                          </div>
+                                          <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                            <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
 
                                           <div class="col-md-6">
                                             <input type="text" class="form-control" name="num_chambre" placeholder="Numéro de chambre" required>
                                           </div>
-                  
                   
                                           <div class="col-md-12 text-center">
                                             <button type="submit" name="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
@@ -139,5 +133,4 @@ $newChambre->addChambre();
     </main>
 
 </body>
-
 </html>

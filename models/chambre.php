@@ -1,6 +1,5 @@
 <?php
- class Chambre {
-   
+ class Chambre {  
     static public function getAll(){
         $stm=DB::connect()->prepare('SELECT * FROM chambre');
         $stm->execute();
@@ -10,9 +9,8 @@
     }
 
      static public function add($data){
-      $stm=DB::connect()->prepare('INSERT INTO chambre(name, prix, type, description, num_chambre)
-         VALUES (:name,:prix,:type,:description,:num_chambre)');
-         $stm->bindParam(':name',$data['name']);
+      $stm=DB::connect()->prepare('INSERT INTO chambre(prix, type, description, num_chambre)
+         VALUES (:prix,:type,:description,:num_chambre)');
          $stm->bindParam(':prix',$data['prix']);
          $stm->bindParam(':type',$data['type']);
          $stm->bindParam(':description',$data['description']);
@@ -47,7 +45,7 @@
         $stm = null;
          
        }
-       
+             
        static public function delete($data){
         $id =$data['id'];     
        try{

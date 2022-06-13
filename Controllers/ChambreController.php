@@ -10,7 +10,6 @@ class ChambreController
     public function addChambre(){
       if(isset($_POST['submit'])){
         $data=array(
-          'name'=>$_POST['name'],
           'prix'=>$_POST['prix'],    
           'type'=>$_POST['type'],
           'description'=>$_POST['description'],

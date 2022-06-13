@@ -1,3 +1,4 @@
+
 <?php
 if (isset($_POST['submit'])) {
 $newReservation = new ReservationController();
@@ -33,7 +34,7 @@ $newReservation->addReservation();
                         <div>
                             <article class="entry">
                                 <div class="card bg-light shadow p-4" style="display:flex;">
-                                    <form action="forms/contact.php" method="post" class="php-email-form">
+                                    <form action="" method="post" class="php-email-form">
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
@@ -80,8 +81,8 @@ $newReservation->addReservation();
 
                   
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; "><a href="account">Submit
-                                            </a></button>
+                                            <button type="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            </button>
                                           </div>
                   
                                         </div>

@@ -4,10 +4,8 @@ $chambres=$data->getAllChambre();
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -88,7 +86,6 @@ $chambres=$data->getAllChambre();
                                 <thead>
                                     <tr>
                                         <th> </th>
-                                        <th>Nom </th>
                                                 <th>Prix</th>
                                                 <th>Type</th>
                                                 <th>Description</th>
@@ -106,7 +103,6 @@ $chambres=$data->getAllChambre();
                                     
                                     <tr>
                                         <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
-                                        <td><?php echo $chambre['name']?></td>
                                         <td><?php echo $chambre['prix']?></td>
                                         <td><?php echo $chambre['type']?></td>
                                         <td><?php echo $chambre['description']?></td>

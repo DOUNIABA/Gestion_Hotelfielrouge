@@ -1,6 +1,6 @@
 <?php
  class Client {
-   
+     
     static public function getAll(){
         $stm=DB::connect()->prepare('SELECT * FROM client');
         $stm->execute();
