@@ -22,8 +22,7 @@
             return 'erreur';
          }
          $stm->close();
-         $stm = null;
-    
+         $stm = null;   
      }
 
     static public function getChambre($id){     

@@ -24,7 +24,7 @@ if (isset($_POST['submits'])) {
     <div class="cover">
       <div class="front">
         <!--<img src="images/frontImg.jpg" alt="">-->
-        <div class="text" style="background:URL('./views/assets/images/images.jpg')  ;">
+        <div class="text" style="background:URL('./views/assets/images/images.jpg');">
           <span class="text-1"> Chaque nouveau ami est une <br> Nouvelle Aventure</span>
           <span class="text-2">Let's get connected</span>
         </div>
@@ -39,31 +39,28 @@ if (isset($_POST['submits'])) {
     </div>
     <div class="forms">
         <div class="form-content">
-        <div class="signup-form">
-          <div class="title">Signup</div>
-        <form action="#">
+                  <div class="login-form">
+            <div class="title">Sign In</div>
+          <form action="#">
             <div class="input-boxes">
               <div class="input-box">
-                <i class="fas fa-user"></i>
-                <input type="text" name="name"placeholder="Enter your name" required>
-              </div>
-              <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="email" placeholder="Enter your email" required>
+                <input type="text" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" name="password" placeholder="Enter your password" required>
+                <input type="password" placeholder="Enter your password" required>
               </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
               <div class="button input-box">
-                <input type="submit" value="Sumbit" name="submits">
+                <input type="submit" value="Sumbit">
               </div>
-              <div class="text sign-up-text">Already have an Account?<a href="login">Login now</a></div>
+              <div class="text sign-up-text">Don't have an Account? <a href="signup">Sigup Now</label></div>
             </div>
-      </form>
-    </div>
-    </div>
-    </div>
+        </form>
+      </div>
+      </div>
   </div>
 </body>
 </html>
+            

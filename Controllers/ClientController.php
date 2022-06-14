@@ -27,6 +27,7 @@ if(isset($_POST['submit'])){
   }
 }
     }
+    
     public function ModifierClient(){
       if(isset($_POST['update'])){
       

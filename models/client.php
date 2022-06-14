@@ -12,7 +12,6 @@
     static public function add($data){
      $stm = DB::connect()->prepare('INSERT INTO client (image,name,email,genre,phone,adress) VALUES (:image,:name,:email,:genre,:phone,:adress)');
      $stm->bindParam(':image',$data['image']);
-
      $stm->bindParam(':name',$data['name']);
      $stm->bindParam(':email',$data['email']);
      $stm->bindParam(':genre',$data['genre']);

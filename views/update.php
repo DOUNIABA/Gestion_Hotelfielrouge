@@ -1,6 +1,4 @@
 <?php
-
-
 $client = new ClientController();
 $client=$client->getOneClient();
 
@@ -9,9 +7,6 @@ if (isset($_POST['update'])) {
     $existeClient = new ClientController();
     $cliente=$existeClient->ModifierClient();
     }
-
-
-
 ?>
 
 <!DOCTYPE html>

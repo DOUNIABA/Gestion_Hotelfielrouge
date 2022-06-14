@@ -1,18 +1,13 @@
+
 <?php
-
-$newReservation = new reservationController();
-if($newReservation->add())
-echo "b1" ;
-
+$newReservation = new ReservationController();
+$newReservation->add()
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -22,10 +17,8 @@ echo "b1" ;
     <link rel="stylesheet" href="views/css/dashboard.css" />
     <title>Dashboard</title>
 </head>
-
 <body>
     <main>
-
                 <div class="container-fluid px-4">
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
@@ -42,7 +35,6 @@ echo "b1" ;
 
                                             <input type="text" name="name" class="form-control" placeholder="Nom" required>
                                           </div>
-
                                           <div class="col-md-6">
                                           <label fs-bold>Numéro de téléphone</label>
 
@@ -51,23 +43,30 @@ echo "b1" ;
 
                                           <div class="col-md-6 ">
                                           <label>Email</label>
-                                            <input type="email" class="form-control" name="prix" placeholder="votre addresse email" required>
+                                            <input type="email" class="form-control" name="email" placeholder="votre addresse email" required>
+                                          </div>
+                                          <div class="col-md-6 ">
+                                          <label>Montant</label>
+                                            <input type="text" class="form-control" name="montant" placeholder="" required>
                                           </div>
                   
                                           <div class="col-md-6 ">
                                             <label>Check-in</label>
-                                            <input type="date" class="form-control" name="prix" placeholder="Check In" required>
+                                            <input type="date" class="form-control" name="checkin" placeholder="Check In" required>
                                           </div>
                   
                                           <div class="col-md-6">
                                           <label>Check-Out</label>
-                                            <input type="date" class="form-control" name="submit" placeholder="Check Out" required>
+                                            <input type="date" class="form-control" name="checkout" placeholder="Check Out" required>
+                                          </div>
+                                          <div class="col-md-6">
+                                          <label>id_client</label>
+                                            <input type="hidden" class="form-control" name="id_client" placeholder="" >
                                           </div>
                                       
                                         <div class="col-md-6">
                                         <label>Type de chambre</label>
-
-                                          <select class="form-select form-select-sm" aria-label="form-select-lg example">
+                                          <select class="form-select form-select-sm" aria-label="form-select-lg example" name="typechambre">
                                             <option selected>Choisir votre chambre</option>
                                             <option value="single">single</option>
                                             <option value="double">Double</option>
@@ -76,9 +75,7 @@ echo "b1" ;
 
                                           </select>                                  
                                          </div>
-                                                            
 
-                  
                                           <div class="col-md-12 text-center">
                                             <button type="submit" name ="addreservation" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
                                             </button>
@@ -89,7 +86,7 @@ echo "b1" ;
                                       
                                       <div class="account mb-5" >
                                       <div class="card text-dark bg-light mb-5" style="max-width: 18rem;">
-                                        <div class="card-header " >tarif des chambres</div>
+                                        <div class="card-header " >Tarif des chambres</div>
                                         <div class="card-body ">
                                           <ul>
                                               <li><h5>Single:</h5>400.00/jour</li>

@@ -41,12 +41,12 @@
   </thead>
   <tbody>
     <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Mark</td>
-      <td>Mark</td>
-      <td>Mark</td>
+      <td><?php?></td>
+      <td><?php?></td>
+      <td><?php?></td>
+      <td> <?php?></td>
+      <td> <?php?></td>
+      <td> <?php?></td>
     </tr>
   
   </tbody>

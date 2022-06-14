@@ -1,11 +1,17 @@
 <?php
-$data = new reservationController();
-$Reservations = $data->getAll();
+
+$data = new ReservationController();
+$Reservations = $data->getAllReservations(); 
+
+if(isset($_POST['valide'])){
+$valide = $data->ModifierReservation(); 
+}
+
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,7 +54,6 @@ $Reservations = $data->getAll();
                     <a href="index.html"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Logout <i class="fas fa-sign-out-alt"></i> </a>
-
                     </ul>
                 </div>
             </div>
@@ -66,68 +71,58 @@ $Reservations = $data->getAll();
                                     aria-label="Search">
                                 <a href="./profile" class="mx-3 "> <img src="views/img/user (1).png"
                                         class="mx-3 w-75"></a>
-
                             </form>
                         </div>
                     </div>
 
                 </nav>
                 <div class="row ">
-                    <div class=" d-flex justify-content-between my-3">
-                        <h1 class="fs-4 ">Liste des reservations</h1>
-                        <div>
-                            <i class="fas fa-sort mx-3  "></i>
-                            <a href="./ajouterReservation"> <button type="button" class="btn fw-bold  fs-6"
-                                    style="background:#ECB390 ; color: #012970;">Ajouter nouvelle
-                                    reservation</button></a>
-                        </div>
-                    </div>
+                   
                     <div class=" table-responsive-sm table-responsive-md">
                         <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
                             <thead>
                                 <tr>
-                                    <th> </th>
                                     <th>Nom </th>
                                     <th>Télé </th>
                                     <th>Email </th>
                                     <th>Check IN </th>
                                     <th>Check OUT</th>
-                                    <th>STATUS</th>
                                     <th>Type de chambre</th>
-                                    <th>Payement </th>
                                     <th>Montant </th>
+                                    <th>status </th>
 
                                     <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <?php
                                     foreach($Reservations as $reservation){
                                     ?>
-
                                 <tr>
-                                 
+                                    <td><?= $reservation['name']?></td> 
+                                    <td><?php echo $reservation['phone']?></td> 
+                                    <td><?php echo $reservation['email']?></td>                 
                                     <td><?php echo $reservation['checkin']?></td>
                                     <td><?php echo $reservation['checkout']?></td>
+                                    <td><?php echo $reservation['typechambre']?></td>
                                     <td><?php echo $reservation['montant']?></td>
-
-
-                                    <td>
-                                        <form method="post" class="mr-1" action="updatereservation">
-                                            <input type="hidden" name="id" value="<?php echo $reservation['id'];?>">
-                                            <button class="btn btn-sm ">
-                                                <i class="fas fa-pen mx-4 "> </i></button>
-                                        </form>
+                                    <td><?= getStatusText( $reservation['status'])?></td>
 
                                     <td>
-                                        <form method="post" class="mr-1" action="deletereservation">
-                                            <input type="hidden" name="id" value="<?php echo $reservation['id'];?>">
-                                            <button class="btn btn-sm ">
-                                                <i class="fas fa-trash  "></i></button>
-                                        </form>
-
+                                    <form action="" method="POST">
+                                                <input type="hidden" name="idreser" value="<?php echo $reservation['id'];?>">
+                                                <button type="submit" name="valide" class="bg-success border-0 px-4 py-2 text-white mx-3">
+                                                   accepté
+                                                </button>
+                                            </form>
+                                            <td>
+                                            <form action="#" method="POST">
+                                                <input type="hidden" name="reserve" value="<?php echo $reservation['id'];?>">
+                                                <button type="submit"class="bg-warning border-0 px-4 py-2 text-white ">
+                                                    Refusé
+                                                </button>
+                                            </form>                                      
                                     </td>
                                 </tr>
                                 <?php }; ?>
@@ -136,9 +131,7 @@ $Reservations = $data->getAll();
                     </div>
                 </div>
             </div>
-
-
-
+            
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
             <script>
             var el = document.getElementById("dashboard");
