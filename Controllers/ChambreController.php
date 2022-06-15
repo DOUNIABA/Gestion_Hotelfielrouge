@@ -22,8 +22,7 @@ class ChambreController
 
         }else {
            echo $result;
-        }
-       
+        }      
         
       }
     }

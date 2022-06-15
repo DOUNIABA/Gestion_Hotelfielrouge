@@ -1,8 +1,8 @@
 <?php
 
-if (isset($_POST['submits'])) {
+if (isset($_POST['add'])) {
   $createUser = new UserController();
-  $createUser->registrer();
+  $createUser->login();
 }
 ?>
 

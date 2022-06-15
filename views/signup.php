@@ -1,8 +1,7 @@
 <?php
-
-if (isset($_POST['submits'])) {
-  $createUser = new UserController();
-  $createUser->registrer();
+if (isset($_POST['ajouter'])) {
+  $newUser = new UserController();
+  $newUser->registrer();
 }
 ?>
 
@@ -19,6 +18,8 @@ if (isset($_POST['submits'])) {
     <link rel="stylesheet" href="./views/assets/css/style1.css"/>
 </head>
 <body>
+
+
   <div class="container">
     <input type="checkbox" id="flip">
     <div class="cover">
@@ -41,11 +42,11 @@ if (isset($_POST['submits'])) {
         <div class="form-content">
         <div class="signup-form">
           <div class="title">Signup</div>
-        <form action="#">
+        <form action="" method="POST">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" name="name"placeholder="Enter your name" required>
+                <input type="text" name="name" placeholder="Enter your name" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -56,7 +57,7 @@ if (isset($_POST['submits'])) {
                 <input type="password" name="password" placeholder="Enter your password" required>
               </div>
               <div class="button input-box">
-                <input type="submit" value="Sumbit" name="submits">
+                <input type="submit" value="Sumbit" name="ajouter">
               </div>
               <div class="text sign-up-text">Already have an Account?<a href="login">Login now</a></div>
             </div>
