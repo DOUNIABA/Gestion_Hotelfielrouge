@@ -1,9 +1,10 @@
-<?php
+<?php 
+ if(isset($_POST['login'])){
+  echo'data receive';
+  $newuser = new UserController();
+  $users = $newuser->login();
 
-if (isset($_POST['add'])) {
-  $createUser = new UserController();
-  $createUser->login();
-}
+ }
 ?>
 
 <!DOCTYPE html>
@@ -41,19 +42,19 @@ if (isset($_POST['add'])) {
         <div class="form-content">
                   <div class="login-form">
             <div class="title">Sign In</div>
-          <form action="#">
+          <form action="" method="POST">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
+                <input type="text" name="email" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
+                <input type="password"name="password" placeholder="Enter your password" required>
               </div>
               <div class="text"><a href="#">Forgot password?</a></div>
               <div class="button input-box">
-                <input type="submit" value="Sumbit">
+                <input type="submit" value="Sumbit" name="login">
               </div>
               <div class="text sign-up-text">Don't have an Account? <a href="signup">Sigup Now</label></div>
             </div>
@@ -62,5 +63,4 @@ if (isset($_POST['add'])) {
       </div>
   </div>
 </body>
-</html>
-            
+</html>       

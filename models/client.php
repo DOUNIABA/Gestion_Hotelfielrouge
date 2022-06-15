@@ -1,6 +1,5 @@
 <?php
- class Client {
-     
+ class Client{  
     static public function getAll(){
         $stm=DB::connect()->prepare('SELECT * FROM client');
         $stm->execute();
@@ -17,7 +16,6 @@
      $stm->bindParam(':genre',$data['genre']);
      $stm->bindParam(':phone',$data['phone']);
      $stm->bindParam(':adress',$data['adress']);
-
      if ($stm->execute()) {
         return 'OK';
      }else {
@@ -25,7 +23,6 @@
      }
      $stm->close();
      $stm = null;
-
     }
 
     static public function getClient($id){     
@@ -44,8 +41,7 @@
            return 'error';
         } 
         $stm->close();
-        $stm = null;
-         
+        $stm = null;    
        }
        
        static public function delete($data){
@@ -62,7 +58,6 @@
     }catch(PDOException $ex){
         echo 'erreur' . $ex->getMessage();
     }
-
  }
  }
 ?>

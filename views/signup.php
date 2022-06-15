@@ -56,7 +56,7 @@ if (isset($_POST['ajouter'])) {
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password" placeholder="Enter your password" required>
               </div>
-              <div class="button input-box">
+              <div class="button input-box"> 
                 <input type="submit" value="Sumbit" name="ajouter">
               </div>
               <div class="text sign-up-text">Already have an Account?<a href="login">Login now</a></div>
