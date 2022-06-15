@@ -110,8 +110,7 @@ $newChambre->addChambre();
                                           <div class="col-md-12 text-center">
                                             <button type="submit" name="submit" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
                                             </button>
-                                          </div>
-                  
+                                          </div>                
                                         </div>
                                       </form>
                                 </div>

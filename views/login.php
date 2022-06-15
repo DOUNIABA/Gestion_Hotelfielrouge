@@ -1,6 +1,5 @@
 <?php 
  if(isset($_POST['login'])){
-  echo'data receive';
   $newuser = new UserController();
   $users = $newuser->login();
 

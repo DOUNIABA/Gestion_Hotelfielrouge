@@ -43,7 +43,6 @@
         $stm->close();
         $stm = null;    
        }
-       
        static public function delete($data){
         $id =$data['id'];     
        try{

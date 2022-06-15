@@ -40,18 +40,7 @@
                                 <li><a href="contact">Contact</a></li>
                             </ul>
                         </div>
-                        <div class="col-2 text-end">
-                            <a href="#"
-                                class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
-                                <span></span>
-                            </a>
-                            <a href="#" class="call-us d-flex align-items-center">
-                                <span class="icon-phone">
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </span>
-                                <span>123-489-9381</span>
-                            </a>
-                        </div>
+                      
                     </div>
                 </div>
             </div>

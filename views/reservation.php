@@ -6,6 +6,10 @@ $Reservations = $data->getAllReservations();
 if(isset($_POST['valide'])){
 $valide = $data->ModifierReservation(); 
 }
+if(isset($_POST['refuse'])){
+    $valide = $data->RefuserReservation(); 
+    }
+
 
 
 ?>
@@ -117,9 +121,9 @@ $valide = $data->ModifierReservation();
                                                 </button>
                                             </form>
                                             <td>
-                                            <form action="#" method="POST">
+                                            <form action="" method="POST">
                                                 <input type="hidden" name="reserve" value="<?php echo $reservation['id'];?>">
-                                                <button type="submit"class="bg-warning border-0 px-4 py-2 text-white ">
+                                                <button type="submit" name="refuse" class="bg-warning border-0 px-4 py-2 text-white ">
                                                     Refusé
                                                 </button>
                                             </form>                                      

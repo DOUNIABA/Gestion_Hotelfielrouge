@@ -12,7 +12,6 @@ class UserController{
               $data = $user->getUser($data);
               if(password_verify($_POST['password'],$data['password']))
               {
-               // echo 'password is correct!';
                 header("location:home");     
             }
         }    

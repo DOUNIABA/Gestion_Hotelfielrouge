@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -11,9 +8,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./views/assets/css/style.css" />
     <title>Hotel</title>
-
 </head>
-
 <body>
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -39,20 +34,9 @@
                                 <li><a href="services">Services</a></li>
                                 <li><a href="about">About</a></li>
                                 <li><a href="contact">Contact</a></li>
+                                <li><button class="btn btn-primary" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
                             </ul>
-                        </div>
-                        <div class="col-2 text-end">
-                            <a href="#"
-                                class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
-                                <span></span>
-                            </a>
-                            <a href="#" class="call-us d-flex align-items-center">
-                                <span class="icon-phone">
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </span>
-                                <span>123-489-9381</span>
-                            </a>
-                        </div>
+                        </div>                 
                     </div>
                 </div>
             </div>

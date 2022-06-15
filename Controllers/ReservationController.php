@@ -42,6 +42,21 @@ class ReservationController
                 }
               }     
                   }
+
+                  public function RefuserReservation(){
+                    if(isset($_POST['refuse'])){
+                    
+                      $resultat = Reservation::AnnulerReservation($_POST['reserve']);
+                      if ($resultat ==='OK'){
+                    
+                      }else {
+                        echo $resultat;
+                      }
+                    }     
+                        }
+
+
+
     }
 
 ?>

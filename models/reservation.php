@@ -8,6 +8,7 @@ class Reservation{
         $stm->close();
         $stm = null;
     }
+
     static public function add($data){
         $stm = DB::connect()->prepare('INSERT INTO reservation (name,phone,email,checkin,checkout,montant,typechambre) VALUES (:name,:phone,:email,:checkin,:checkout,:montant,:typechambre');
         $stm->bindParam(':name',$data['name']);
@@ -17,6 +18,7 @@ class Reservation{
         $stm->bindParam(':checkout',$data['checkout']);
         $stm->bindParam(':montant',$data['montant']);
         $stm->bindParam(':typechambre',$data['typechambre']);
+
         if ($stm->execute()) {
            return 'ok';
         }else{
@@ -34,7 +36,17 @@ class Reservation{
         } 
         $stm->close();
         $stm = null;
-         
+       }
+
+       static public function AnnulerReservation($id){
+        $stm = DB::connect()->prepare("UPDATE reservation SET `status`=0 where id='$id'");   
+        if ($stm->execute()) {
+           return 'OK';
+        }else {
+           return 'error';
+        } 
+        $stm->close();
+        $stm = null;
        }
 }
 ?>
