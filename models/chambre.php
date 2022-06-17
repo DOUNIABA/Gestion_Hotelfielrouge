@@ -1,7 +1,8 @@
 <?php
  class Chambre {  
     static public function getAll(){
-        $stm=DB::connect()->prepare('SELECT * FROM chambre WHERE client.id=chambre=id_client');
+        $stm=DB::connect()->prepare('
+        SELECT chambre.* FROM chambre ');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
         $stm->close();

@@ -2,7 +2,7 @@
 class Reservation{
     static public function getAll(){
         $stm=DB::connect()->prepare('
-        SELECT reservation.* FROM reservation WHERE client.id=reservation.id_client AND client.id=chambre.id_client');
+        SELECT reservation.* FROM reservation WHERE client.id = reservation.id_client');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
         $stm->close();
