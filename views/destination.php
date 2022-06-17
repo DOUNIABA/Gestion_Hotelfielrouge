@@ -71,11 +71,11 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
-                                <h3><a href="ajouterReservation">Single</a></h3>
+                                <h3><a href="">Single</a></h3>
                             </div>
                             <div class="price ms-auto">
                                 <sup>DH</sup>
@@ -89,11 +89,11 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="#" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
-                                <h3><a href="#">Twins</a></h3>
+                                <h3><a href="" >Twins</a></h3>
                             </div>
                             <div class="price ms-auto">
                                 <sup>DH</sup>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="#" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -122,11 +122,11 @@
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="#" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
                                 alt="Image" class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
-                                <h3><a href="#">Double</a></h3>
+                                <h3><a href="">Double</a></h3>
                             </div>
                             <div class="price ms-auto">
                                 <sup>DH</sup>
@@ -140,14 +140,9 @@
                     <div class="container mb-5">
                         <div class="row">
                             <div class="col-lg-3" data-aos="fade-up">
-                                <h2 class="heading">Instagram</h2>
+                                <h2 class="heading">Gallerie</h2>
                             </div>
-                            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                                <p>
-                                    A small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-                                    into your mouth.</p>
-                            </div>
+                          
                         </div>
                     </div>
                     <div class="instagram-slider-wrap" data-aos="fade-up" data-aos-delay="200">

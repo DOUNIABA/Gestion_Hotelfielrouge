@@ -1,9 +1,7 @@
 <?php
 $client = new ClientController();
 $client=$client->getOneClient();
-
 if (isset($_POST['update'])) {
-
     $existeClient = new ClientController();
     $cliente=$existeClient->ModifierClient();
     }
@@ -11,11 +9,9 @@ if (isset($_POST['update'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -25,7 +21,6 @@ if (isset($_POST['update'])) {
     <link rel="stylesheet" href="views/css/dashboard.css" />
     <title>Dashboard</title>
 </head>
-
 <body>
     <main>
         <div class="d-flex" id="dashboard">
@@ -37,23 +32,18 @@ if (isset($_POST['update'])) {
                 </a>
                 <hr class="mb-3 ">
                 <div class="list-group  d-flex ">
-
                     <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6  "
                         style="background:#ECB390 ;">
                         <img src="views/img/home.png"> Accueil</a>
-                    
                     <a href="client"
                         class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 bg-transparent my-2   ">
                         <img src="views/img/user.png">Client</a>
-
                         <a href="chambre" class="list-group-item mx-2 border-0 fw-bold fs-6 bg-transparent my-2 p-2 ">
                         <img src="views/img/chambre.png">CHAMBRE</a>
-
                     <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
                         <img src="views/img/booking.png">Réservation</a>
                     <a href="#" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
-                  
                     <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6   bg-transparent my-2 p-2 ">
                         <img src="views/img/settings (1).png"> profile</a>
                     <a href="index.html"
@@ -83,7 +73,7 @@ if (isset($_POST['update'])) {
                             </form>
                         </div>
                     </div>
-''
+
                 </nav>
                 <div class="container-fluid px-4">
                     <div class="row ">
@@ -96,25 +86,25 @@ if (isset($_POST['update'])) {
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
-                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?> required>
+                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?>>
 
                                           <div class="col-md-6">
-                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?> required>
+                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?>>
                                           </div>
                                           <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?> required>
+                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?>>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?> required>
+                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?>>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?> required>
+                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?>>
                                           </div>
                   
                                           <div class="col-md-12">
-                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?> required>
+                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?>>
                                           </div>
                                        
                                           <div class="col-md-12 text-center">

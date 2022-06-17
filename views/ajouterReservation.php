@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 $newReservation = new ReservationController();
 $newReservation->add()
 ?>
@@ -19,7 +20,7 @@ $newReservation->add()
 </head>
 <body>
     <main>
-                <div class="container-fluid px-4">
+                <div class="container px-4">
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
                             <h1 class="fs-4 ">Séction de Réservation</h1>
@@ -31,53 +32,39 @@ $newReservation->add()
                                         <div class="row gy-4">
                   
                                           <div class="col-md-6">
-                                          <label>Nom Complet</label>
-
-                                            <input type="text" name="name" class="form-control" placeholder="Nom" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Nom Complet" value="">
                                           </div>
-                                          <div class="col-md-6">
-                                          <label fs-bold>Numéro de téléphone</label>
 
-                                            <input type="text" name="phone" class="form-control" placeholder="Telephone" required>
+                                          <div class="col-md-6">
+                                            <input type="text" name="phone" class="form-control" placeholder="Telephone">
                                           </div>
 
                                           <div class="col-md-6 ">
-                                          <label>Email</label>
-                                            <input type="email" class="form-control" name="email" placeholder="votre addresse email" required>
+                                            <input type="email" class="form-control" name="email" placeholder="votre addresse email" value="" >
                                           </div>
-                                          <div class="col-md-6 ">
-                                          <label>Montant</label>
-                                            <input type="text" class="form-control" name="montant" placeholder="" required>
-                                          </div>
-                  
-                                          <div class="col-md-6 ">
-                                            <label>Check-in</label>
-                                            <input type="date" class="form-control" name="checkin" placeholder="Check In" required>
-                                          </div>
-                  
+
                                           <div class="col-md-6">
-                                          <label>Check-Out</label>
-                                            <input type="date" class="form-control" name="checkout" placeholder="Check Out" required>
-                                          </div>
-                                          <div class="col-md-6">
-                                          <label>id_client</label>
-                                            <input type="hidden" class="form-control" name="id_client" placeholder="" >
-                                          </div>
-                                      
-                                        <div class="col-md-6">
-                                        <label>Type de chambre</label>
-                                          <select class="form-select form-select-sm" aria-label="form-select-lg example" name="typechambre">
+                                          <select class="form-select form-select-sm" aria-label="form-select-lg example" name="typechambre"  value="">
                                             <option selected>Choisir votre chambre</option>
                                             <option value="single">single</option>
                                             <option value="double">Double</option>
                                             <option value="twins">Twins</option>
                                             <option value="twidens">Deluxe</option>
-
                                           </select>                                  
-                                         </div>
+                                         </div> 
+                  
+                                          <div class="col-md-6 ">
+                                            <input type="date" class="form-control" name="checkin" placeholder="Check In" >
+                                            <label>Check-in</label>
+                                          </div>
+                                            
+                                          <div class="col-md-6">
+                                            <input type="date" class="form-control" name="checkout" placeholder="Check Out" >
+                                            <label>Check-Out</label>
+                                          </div>                                                                                                                      
 
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" name ="addreservation" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit
+                                            <button type="submit" name ="addreservation" class="btn  w-20" style="background:#ECB390 ; color: #012970; ">Submit
                                             </button>
                                           </div>
                   

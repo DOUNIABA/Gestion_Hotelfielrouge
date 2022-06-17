@@ -1,7 +1,7 @@
 <?php
  class Chambre {  
     static public function getAll(){
-        $stm=DB::connect()->prepare('SELECT * FROM chambre');
+        $stm=DB::connect()->prepare('SELECT * FROM chambre WHERE client.id=chambre=id_client');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
         $stm->close();
@@ -9,12 +9,14 @@
     }
 
      static public function add($data){
-      $stm=DB::connect()->prepare('INSERT INTO chambre(prix, type, description, num_chambre)
-         VALUES (:prix,:type,:description,:num_chambre)');
+      $stm=DB::connect()->prepare('INSERT INTO chambre(prix, type, description, num_chambre,id_client)
+         VALUES (:prix,:type,:description,:num_chambre,:id_client)');
          $stm->bindParam(':prix',$data['prix']);
          $stm->bindParam(':type',$data['type']);
          $stm->bindParam(':description',$data['description']);
          $stm->bindParam(':num_chambre',$data['num_chambre']);
+         $stm->bindParam(':id_client',$data['id']);
+
 
          if($stm->execute()){
             return 'OK';

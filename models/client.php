@@ -48,7 +48,7 @@
        try{
         $query = 'DELETE FROM client WHERE id=:id';
         $stm=DB::connect()->prepare($query);
-        $stm->execute(array(":id"=> $id));
+        $stm->execute(array(':id'=> $id));
         if ($stm->execute()) {
             return 'OK';
          }else {

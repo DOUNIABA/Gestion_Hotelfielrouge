@@ -1,4 +1,9 @@
+<?php 
+session_start();
+?>
+
 <!doctype html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -36,6 +41,12 @@
                                 <li><a href="contact">Contact</a></li>
                                 <li><button class="btn btn-primary" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
                             </ul>
+                             <div class="uuser-name">
+                                    <h7>  
+                                        <?php  
+                                        echo $_SESSION["name"]; ?> 
+                                    </h7>
+                            </div>
                         </div>                 
                     </div>
                 </div>
@@ -48,7 +59,7 @@
                 <div class="col-lg-8 text-center">
                     <h1 class="heading mb-5 text-white">Une fois par an, allez dans un endroit où vous n'êtes jamais
                         allé.</h1>
-                    <a href="ajouterReservation" class="btn btn-primary">Reservez Dés maintenat</a>
+                    <a href="destination" class="btn btn-primary">Reservez Dés maintenat</a>
                 </div>
             </div>
         </div>
@@ -218,13 +229,9 @@
         <div class="container mb-5">
             <div class="row">
                 <div class="col-lg-3" data-aos="fade-up">
-                    <h2 class="heading">Instagram</h2>
+                    <h2 class="heading">Gallerie</h2>
                 </div>
-                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                    <p>
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                </div>
+               
             </div>
         </div>
         <div class="instagram-slider-wrap" data-aos="fade-up" data-aos-delay="200">
