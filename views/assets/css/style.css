@@ -1481,7 +1481,7 @@
 .icon-file-text:before {
     content: "\f15c"
 } */
-
+ 
 .icon-sort-alpha-asc:before {
     content: "\f15d"
 }
@@ -6558,7 +6558,7 @@
     content: "\e56b"
 } */
 
-/* [class^="flaticon-"]:before,
+ [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
@@ -6571,9 +6571,9 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
-} */
+} 
 
-/* .flaticon-trekking:before {
+ .flaticon-trekking:before {
     content: "\f100"
 }
 
@@ -10185,7 +10185,7 @@ textarea.form-control {
     to {
         -webkit-transform: rotate(360deg)/* rtl:ignore */
         ;
-        transform: rotate(360deg)/* rtl:ignore */
+        transform: rotate(360deg)/ rtl:ignore */
         ;
     }
 }

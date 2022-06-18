@@ -1,6 +1,14 @@
+<?php
+$newuser = new utilisateurController();
+if (!isset($_SESSION['nom'])) {
+    header("location: login");
+}
+$data = new contactController();
+$contact = $data->getAllContat();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +22,6 @@
     <link rel="stylesheet" href="views/css/dashboard.css" />
     <title>Dashboard</title>
 </head>
-
 <body>
     <main>
         <div class="d-flex" id="dashboard">
@@ -26,7 +33,6 @@
                 </a>
                 <hr class="mb-3 ">
                 <div class="list-group d-flex ">
-
                     <a href="dashboard" class="list-group-item mx-2 p-2 border-0 my-2  rounded-3  fw-bold  fs-6">
                         <img src="views/img/home.png"> Accueil</a>                   
                     <a href="client" class="list-group-item mx-2 p-2 fw-bold  fs-6  border-0 my-2">
@@ -35,12 +41,12 @@
                         <img src="views/img/chambre.png">CHAMBRE</a>
                     <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
                         <img src="views/img/booking.png">Réservation</a>
-                    <a href="" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
+                    <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
                     <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
                         <img src="views/img/user.png"> Profile</a>
-                    <a href="index.html"
+                    <a href=""
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Logout <i class="fas fa-sign-out-alt"></i> </a>
 
@@ -66,43 +72,48 @@
                         </div>
                     </div>
                 </nav>
-                <div class="container-fluid px-4">
-                    <div class="row my-2 d-flex justify-content-center">
-                        <div class="col-lg-4 col-md-5 mb-4 ">
-                            <div class="p-3 d-flex justify-content-around align-items-center card_client ">
-                                <div>
-                                <img src="views/img/user.png">
-                                    <p class="fs-5 mb-5 Secondary-text">Clients</p>
-                                </div>
-                                <h1 class="fs-5 mt-5">243</h1>
-                            </div>
-                        </div>
-                        <div class="col-lg-4  col-md-5  mb-4 ">
-                            <div class="p-3  d-flex justify-content-around align-items-center card_chambre ">
-                                <div>
-                                    <img src="views/img/chambre.png">
-                                    <p class="fs-5 mb-5 Secondary-text">Chambres</p>
-                                </div>
-                                <h1 class="fs-5 mt-5 text-white">13</h1>
-                            </div>
-                        </div>
-                        <div class=" col-lg-4 col-md-5  mb-4">
-                            <div class="p-3   d-flex justify-content-around align-items-center card_reservation ">
-                                <div>
-                                    <img src="views/img/bookingCart.png">
+                <div class="row ">
+                    <div class=" d-flex justify-content-between my-3">
+                        <h1 class="fs-4 ">Liste message</h1>
 
-                                    <p class="fs-5 mb-5 Secondary-text">Réservations</p>
-                                </div>
-                                <h1 class="fs-5 mt-5">556</h1>
-                            </div>
-                        </div>
-                       
                     </div>
-                 
-                </div>
+                    <div class=" table-responsive-sm table-responsive-md">
+                        <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
+                            <thead>
+                                <tr>
+                                    <th> </th>
+                                    <th>Nom Complet</th>
+                                    <th>email</th>
+                                    <th>message</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($contact as $contact) : ?>
+                                    <tr>
+                                        <rtd>
+                                            <td></td>
+                                            <td><?php echo $contact['name'] ?></td>
+                                            <td><?php echo $contact['email'] ?></td>
+                                            <td><?php echo $contact['message'] ?></td>
+                                            <td class="d-flex">
+                                                <form action="deletecontact" method="POST">
+                                                    <input type="hidden" name="id" value="<?php echo $contact['id_contact']; ?>">
+                                                    <button type="submit" class="border-0 btn">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                        <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>             
             </div>
-
-
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
             <script>
                 var el = document.getElementById("dashboard");

@@ -40,7 +40,7 @@ $chambres=$data->getAllChambre();
                         <img src="views/img/chambre.png">CHAMBRE</a>
                     <a href="reservation" class="list-group-item mx-2 fw-bold  fs-6   border-0 my-2  rounded-3 p-2 ">
                         <img src="views/img/booking.png">Réservation</a>
-                    <a href="#" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
+                    <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
                     <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
