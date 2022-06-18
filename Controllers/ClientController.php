@@ -10,7 +10,6 @@ class ClientController
     public function AjouterClient(){
 if(isset($_POST['submit'])){
   $data = array(
-    'image'=>$_POST['image'],
     'name'=>$_POST['name'],
     'email'=>$_POST['email'],    
     'genre'=>$_POST['genre'],

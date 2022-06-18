@@ -13,7 +13,6 @@ class ReservationController
             'email'=>$_POST['email'],
             'checkin'=>$_POST['checkin'],
             'checkout'=>$_POST['checkout'],
-             'id_client'=>$_SESSION['id'],
             // 'id_client'=>6,
             'typechambre'=>$_POST['typechambre'],
             'status'=>11                  

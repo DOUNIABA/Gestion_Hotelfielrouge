@@ -1,7 +1,7 @@
 <?php
  class Client{  
     static public function getAll(){
-        $stm=DB::connect()->prepare('SELECT * FROM client');
+        $stm=DB::connect()->prepare('SELECT * FROM clients');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
         $stm->close();
@@ -9,8 +9,7 @@
     }
 
     static public function add($data){
-     $stm = DB::connect()->prepare('INSERT INTO client (image,name,email,genre,phone,adress) VALUES (:image,:name,:email,:genre,:phone,:adress)');
-     $stm->bindParam(':image',$data['image']);
+     $stm = DB::connect()->prepare('INSERT INTO clients (name,email,genre,phone,adress) VALUES (:name,:email,:genre,:phone,:adress)');
      $stm->bindParam(':name',$data['name']);
      $stm->bindParam(':email',$data['email']);
      $stm->bindParam(':genre',$data['genre']);
@@ -26,7 +25,7 @@
     }
 
     static public function getClient($id){     
-      $stm=DB::connect()->prepare('SELECT * FROM client where id =?');
+      $stm=DB::connect()->prepare('SELECT * FROM clients where id =?');
       $stm->execute([$id]);
       return $stm->fetch(PDO::FETCH_ASSOC);
       $stm->close();
@@ -34,7 +33,7 @@
     }
 
     static public function update($id,$name,$email,$genre,$phone,$adr){
-        $stm = DB::connect()->prepare("UPDATE client SET `name`=? , email=?, genre=?, phone=? , adress= ? WHERE id= ?");   
+        $stm = DB::connect()->prepare("UPDATE clients SET `name`=? , email=?, genre=?, phone=? , adress= ? WHERE id= ?");   
         if ($stm->execute([$name,$email,$genre,$phone,$adr,$id])) {
            return 'OK';
         }else {
@@ -46,7 +45,7 @@
        static public function delete($data){
         $id =$data['id'];     
        try{
-        $query = 'DELETE FROM client WHERE id=:id';
+        $query = 'DELETE FROM clients WHERE id=:id';
         $stm=DB::connect()->prepare($query);
         $stm->execute(array(':id'=> $id));
         if ($stm->execute()) {

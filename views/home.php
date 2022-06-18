@@ -39,14 +39,15 @@ session_start();
                                 <li><a href="services">Services</a></li>
                                 <li><a href="about">About</a></li>
                                 <li><a href="contact">Contact</a></li>
-                                <li><button class="btn btn-primary" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
-                            </ul>
-                             <div class="uuser-name">
-                                    <h7>  
+                                <li><button class="btn btn-light" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
+                            <li> <div class="uuser-name">
+                                    <h1  style="color:white;" > Bonjour
                                         <?php  
                                         echo $_SESSION["name"]; ?> 
-                                    </h7>
-                            </div>
+                                    </h1></li>
+                             </div> 
+                            </ul>
+                           
                         </div>                 
                     </div>
                 </div>
@@ -59,7 +60,7 @@ session_start();
                 <div class="col-lg-8 text-center">
                     <h1 class="heading mb-5 text-white">Une fois par an, allez dans un endroit où vous n'êtes jamais
                         allé.</h1>
-                    <a href="destination" class="btn btn-primary">Reservez Dés maintenat</a>
+                    <a href="destination" class="btn btn-primary"  style="color:black;" >Reservez Dés maintenat</a>
                 </div>
             </div>
         </div>
@@ -163,7 +164,7 @@ session_start();
 
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item2.jpg"
+                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item2.jpg"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
                                         <p>Type:Single<br>
@@ -177,7 +178,7 @@ session_start();
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item3.jpg"
+                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item3.jpg"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
                                         <p>Type:Double<br>
@@ -191,7 +192,7 @@ session_start();
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="././views/assets/images/item4.jpg"
+                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item4.jpg"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
                                         <p>Type:Twins<br>
@@ -205,7 +206,7 @@ session_start();
                             </div>
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="#" class="thumbnail"><img src="././views/assets/images/background1.jpg"
+                                    <a href="signup#" class="thumbnail"><img src="././views/assets/images/background1.jpg"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
                                         <p>Type:Deluxe<br>

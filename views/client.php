@@ -88,16 +88,13 @@ $clients=$data->getAllClients();
                         <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
                             <thead>
                                 <tr>
-                                    <th> </th>
-
-                                    <th> profile</th>
-                                    <th>Nom Complet</th>
+                                <th>Nom Complet</th>
                                     <th>Email</th>
                                     <th>Adresse</th>
                                     <th>Téle</th>
                                     <th>Genre</th>
 
-                                    <th></th>
+                                 
                                     <th></th>
                                 </tr>
                             </thead>
@@ -107,8 +104,6 @@ $clients=$data->getAllClients();
                                     ?>
                                 <tr>
                                     <td hidden><?php echo $client['id'];?></td>
-                                    <td> <?php echo $client['image'];?></td>
-                                    <td> <?php echo $client['name'];?></td>
                                     <td><?php echo $client['name'];?></td>
                                     <td><?php echo $client['email'];?></td>
                                     <td><?php echo $client['adress'];?></td>
@@ -138,9 +133,6 @@ $clients=$data->getAllClients();
                     </div>
                 </div>
             </div>
-
-
-
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
             <script>
             var el = document.getElementById("dashboard");

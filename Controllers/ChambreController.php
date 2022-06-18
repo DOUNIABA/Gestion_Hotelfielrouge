@@ -28,11 +28,12 @@ class ChambreController
     }
     
     public function ModifierChambre(){
-      if(isset($_POST['update'])){
+      if(isset($_POST['id'])){
       
-        $resultat = Chambre::update($_POST['id'],$_POST['name'],$_POST['prix'],$_POST['type'],$_POST['description'],$_POST['num_chambre']);
+        $resultat = Chambre::update($_POST['id'],$_POST['prix'],$_POST['type'],$_POST['description'],$_POST['num_chambre']);
+        var_dump($resultat);
         if ($resultat ==='OK'){
-          header('location:chambre');
+          // header('location:chambre');
       
         }else {
           echo $resultat;

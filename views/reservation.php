@@ -9,11 +9,7 @@ $valide = $data->ModifierReservation();
 if(isset($_POST['refuse'])){
     $valide = $data->RefuserReservation(); 
     }
-
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

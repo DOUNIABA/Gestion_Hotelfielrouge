@@ -92,7 +92,7 @@ if (isset($_POST['update'])) {
                 <div class="container-fluid px-4">
                     <div class="row ">
                         <div class=" d-flex justify-content-between my-3">
-                            <h1 class="fs-4 ">modifier un Client</h1>
+                            <h1 class="fs-4 ">modifier une Chambre</h1>
                         </div>
                         <div>
                          
@@ -100,11 +100,9 @@ if (isset($_POST['update'])) {
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
-                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $chambre['id'];?> required>
 
-                                          <div class="col-md-6">
-                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $chambre['name'];?> required>
-                                          </div>
+                                         
+
                                           <div class="col-md-6 ">
                                             <input type="text" class="form-control" name="prix" placeholder="Prix" value=<?php echo $chambre['prix'];?> required>
                                           </div>

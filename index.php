@@ -21,7 +21,7 @@ if(isset($_GET['page'])){
     }
 }
 else{
-        $home->index('signup');
+        $home->index('home');
     }
 
     include('views/includes/footer.php') ;

@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
+                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
+                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
+                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -122,7 +122,7 @@
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
+                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
                                 alt="Image" class="img-fluid"></a>
                         <div class="d-flex">
                             <div>

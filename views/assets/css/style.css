@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'icomoon';
     src: url(fonts/icomoon/fonts/icomoon1a44.eot?10si43);
     src: url(fonts/icomoon/fonts/icomoon1a44.eot?10si43#iefix) format('embedded-opentype'), url(fonts/icomoon/fonts/icomoon1a44.ttf?10si43) format('truetype'), url(fonts/icomoon/fonts/icomoon1a44.woff?10si43) format('woff'), url(fonts/icomoon/fonts/icomoon1a44.svg?10si43#icomoon) format('svg');
@@ -1481,7 +1481,7 @@
 .icon-file-text:before {
     content: "\f15c"
 } */
-/* 
+
 .icon-sort-alpha-asc:before {
     content: "\f15d"
 }
@@ -6593,7 +6593,7 @@
 
 .flaticon-plane:before {
     content: "\f105"
-} */
+}
 
 .tns-outer {
     padding: 0!important
