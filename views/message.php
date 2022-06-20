@@ -1,9 +1,9 @@
 <?php
-$newuser = new utilisateurController();
-if (!isset($_SESSION['nom'])) {
-    header("location: login");
-}
-$data = new contactController();
+// $newuser = new ContactController();
+// if (!isset($_SESSION['name'])) {
+//     header("location: signup");
+
+$data = new ContactController();
 $contact = $data->getAllContat();
 ?>
 
@@ -46,7 +46,7 @@ $contact = $data->getAllContat();
                 
                     <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
                         <img src="views/img/user.png"> Profile</a>
-                    <a href=""
+                    <a href="login"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Logout <i class="fas fa-sign-out-alt"></i> </a>
 
@@ -85,8 +85,7 @@ $contact = $data->getAllContat();
                                     <th>Nom Complet</th>
                                     <th>email</th>
                                     <th>message</th>
-                                    <th></th>
-                                    <th></th>
+                                   
                                 </tr>
                             </thead>
                             <tbody>
@@ -96,17 +95,8 @@ $contact = $data->getAllContat();
                                             <td></td>
                                             <td><?php echo $contact['name'] ?></td>
                                             <td><?php echo $contact['email'] ?></td>
-                                            <td><?php echo $contact['message'] ?></td>
-                                            <td class="d-flex">
-                                                <form action="deletecontact" method="POST">
-                                                    <input type="hidden" name="id" value="<?php echo $contact['id_contact']; ?>">
-                                                    <button type="submit" class="border-0 btn">
-                                                        <i class="fas fa-trash"></i>
-                                                    </button>
-                                                </form>
-                                            </td>
+                                            <td><?php echo $contact['message'] ?></td>                                       
                                             <td>
-
                                             </td>
                                         <?php endforeach; ?>
                             </tbody>

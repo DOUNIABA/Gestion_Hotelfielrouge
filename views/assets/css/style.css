@@ -6573,9 +6573,6 @@
     -moz-osx-font-smoothing: grayscale
 } 
 
- .flaticon-trekking:before {
-    content: "\f100"
-}
 
 .flaticon-map:before {
     content: "\f101"

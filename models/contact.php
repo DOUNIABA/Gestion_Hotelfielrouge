@@ -6,10 +6,10 @@ class contact{
         $stmt->bindParam(':email',  $data['email']);
         $stmt->bindParam(':message',  $data['message']);
         if($stmt->execute()){
-            return 'contact is created successfully';
+            return 'Message envoyé';
           }
           else{
-            return 'contact was not created successfully';
+            return 'non';
           }        
           $stmt = null;
     }

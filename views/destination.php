@@ -32,15 +32,14 @@
                         </div>
                         <div class="col-8 text-center">
                             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                                <li class="active"><a href="home">Accueil</a></li>
-                                <li><a href="destination">ROOMS</a>
+                                <li class="active"><a href="home">ACCUEIL</a></li>
+                                <li><a href="destination">CHAMBRES</a>
                                 </li>
-                                <li><a href="services">Services</a></li>
-                                <li><a href="about">About</a></li>
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="services">SERVICES</a></li>
+                                <li><a href="about">A PROPPOS</a></li>
+                                <li><a href="contact">CONTACT</a></li>
                             </ul>
-                        </div>
-                      
+                        </div>                   
                     </div>
                 </div>
             </div>
@@ -71,7 +70,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/item1.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -89,7 +88,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/insta7.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -105,7 +104,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/ITEM10.jpg" alt="Image"
                                 class="img-fluid"></a>
                         <div class="d-flex">
                             <div>
@@ -122,7 +121,7 @@
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-5">
                     <div class="media-1">
-                        <a href="signup" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
+                        <a href="ajouterReservation" class="d-block mb-3"><img src="./views/assets/images/pexels-pixabay-271619.jpg"
                                 alt="Image" class="img-fluid"></a>
                         <div class="d-flex">
                             <div>

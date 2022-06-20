@@ -1,8 +1,9 @@
-
 <?php
 session_start();
+
 $newReservation = new ReservationController();
-$newReservation->add()
+$newReservation->add();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,14 +45,8 @@ $newReservation->add()
                                           </div>
 
                                           <div class="col-md-6">
-                                          <select class="form-select form-select-sm" aria-label="form-select-lg example" name="typechambre"  value="">
-                                            <option selected>Choisir votre chambre</option>
-                                            <option value="single">single</option>
-                                            <option value="double">Double</option>
-                                            <option value="twins">Twins</option>
-                                            <option value="twidens">Deluxe</option>
-                                          </select>                                  
-                                         </div> 
+                                          <input class="form-control" aria-label="form-select-lg example" name="typechambre"  value="">
+                                          </div> 
                   
                                           <div class="col-md-6 ">
                                             <input type="date" class="form-control" name="checkin" placeholder="Check In" >
@@ -64,9 +59,8 @@ $newReservation->add()
                                           </div>                                                                                                                      
 
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" name ="addreservation" class="btn  w-20" style="background:#ECB390 ; color: #012970; ">Submit
+                                            <button type="submit" name="finir" class="btn  w-15" style="background:#F4BFBF ; color: black; ">Submit
                                             </button>
-                                          </div>
                   
                                         </div>
                                       </form>
@@ -85,8 +79,6 @@ $newReservation->add()
                                         </div>
                                       </div>
                                       </div>
-
-
                             </article>
                             
                         </div>

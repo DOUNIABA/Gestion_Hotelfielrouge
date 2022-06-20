@@ -11,7 +11,7 @@ require_once('./autoload.php');
 require_once('./controllers/HomeController.php');
 
 $home =new HomeController();
-$page=['signup','login','dashboard','home','destination','contact','about','services','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation','update','delete','deletechambre','updatechambre','account'];
+$page=['signup','login','dashboard','home','destination','contact','about','services','client','ajouterClient','chambre','ajouterChambre','reservation','ajouterReservation','update','delete','deletechambre','updatechambre','account','admin','message','logout'];
 
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$page)){

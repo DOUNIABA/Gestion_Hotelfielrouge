@@ -51,7 +51,7 @@ if(isset($_POST['refuse'])){
 
                     <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
                         <img src="views/img/user.png"> Profile</a>
-                    <a href="index.html"
+                    <a href="login"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Logout <i class="fas fa-sign-out-alt"></i> </a>
                     </ul>

@@ -30,12 +30,12 @@
                         </div>
                         <div class="col-8 text-center">
                             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                                <li class="active"><a href="home">Accueil</a></li>
-                                <li><a href="destination">ROOMS</a>                                
+                                <li class="active"><a href="home">ACCUEIL</a></li>
+                                <li><a href="destination">CHAMBRES</a>                                
                                 </li>
-                                <li><a href="services">Services</a></li>
-                                <li><a href="about">About</a></li>
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="services">SERVICES</a></li>
+                                <li><a href="about">A PROPOS</a></li>
+                                <li><a href="contact">CONTACT</a></li>
                             </ul>
                         </div>
                     
@@ -44,7 +44,6 @@
             </div>
         </div>
     </nav>
-
 
 <div class="hero overlay" style="background-image:url(././views/assets/images/elem7.jpg)">
 <div class="container">

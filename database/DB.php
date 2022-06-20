@@ -3,7 +3,7 @@
 <?php
 class DB{
     static public function connect(){
-        $conn=new PDO("mysql:host=localhost;dbname=gestion_hotel","root","");
+        $conn=new PDO("mysql:host=localhost;dbname=hotel_management","root","");
         $conn->exec("set names utf8");
         $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
         return $conn;

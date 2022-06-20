@@ -33,15 +33,15 @@ session_start();
                         </div>
                         <div class="col-8 text-center">
                             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                                <li class="active"><a href="home">Accueil</a></li>
-                                <li><a href="destination">ROOMS</a>
+                                <li class="active"><a href="home">ACCUEIL</a></li>
+                                <li><a href="destination">CHAMBRES</a>
                                 </li>
-                                <li><a href="services">Services</a></li>
-                                <li><a href="about">About</a></li>
-                                <li><a href="contact">Contact</a></li>
-                                <li><button class="btn btn-primary" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
+                                <li><a href="services">SERVICES</a></li>
+                                <li><a href="about">A PROPOS</a></li>
+                                <li><a href="contact">CONTACT</a></li>
+                                <li><button class="btn btn-dark" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
                             <li> <div class="uuser-name" >
-                                    <h1>  
+                                    <h1 style="color:white;"> Bonjour
                                         <?php  
                                         echo $_SESSION["name"]; ?> 
                                     </h1></li>
@@ -60,7 +60,7 @@ session_start();
                 <div class="col-lg-8 text-center">
                     <h1 class="heading mb-5 text-white">Une fois par an, allez dans un endroit où vous n'êtes jamais
                         allé.</h1>
-                    <a href="destination" class="btn btn-primary">Reservez Dés maintenat</a>
+                    <a href="destination" class="btn btn-primary" style="color:black;">Reservez Dés maintenat</a>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@ session_start();
 
                             <div class="item">
                                 <div class="post-entry">
-                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item2.jpg"
+                                    <a href="ajouterReservation" class="thumbnail"><img src="././views/assets/images/item2.jpg"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="post-entry-body">
                                         <p>Type:Single<br>
@@ -185,7 +185,7 @@ session_start();
                                             prix: <br>
                                             Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="" class="more">Rserver</a>
+                                            <a href="ajouterReservation" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +199,7 @@ session_start();
                                             prix: <br>
                                             Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="" class="more">Rserver</a>
+                                            <a href="ajouterReservation" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +213,7 @@ session_start();
                                             prix: <br>
                                             Max-occupation:1</p>
                                         <div class="read-more-wrap">
-                                            <a href="" class="more">Rserver</a>
+                                            <a href="ajouterReservation" class="more">Rserver</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,78 +297,26 @@ session_start();
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="widget">
-                        <h3>Home</h3>
+                        <h3>Accueil</h3>
                         <ul class="list-unstyled float-left links">
                             <li><a href="#">About us</a></li>
-                            <li><a href="#">Places</a></li>
                             <li><a href="#">Services</a></li>
-                            <li><a href="#">Destination</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Chambres</a></li>
+                            <li><a href="#">A propos de nous</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="widget">
-                        <h3>Practice Area</h3>
-                        <ul class="list-unstyled float-left links">
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Popular places</a></li>
-                            <li><a href="#">Destination</a></li>
-                            <li><a href="#">Tour</a></li>
-                            <li><a href="#">Family Vacation</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="widget">
-                        <h3>Services</h3>
-                        <ul class="list-unstyled float-left links">
-                            <li><a href="#">Tour</a></li>
-                            <li><a href="#">Swimming</a></li>
-                            <li><a href="#">Kayak</a></li>
-                            <li><a href="#">Surfing</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="widget">
-                        <h3>Contact</h3>
-                        <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-                        <ul class="list-unstyled links mb-4">
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a
-                                    href="https://preview.colorlib.com/cdn-cgi/l/email-protection#7811161e173815011c1715191116561b1715"><span
-                                        class="__cf_email__"
-                                        data-cfemail="0e676068614e63776a61636f6760206d6163">[email&#160;protected]</span></a>
-                            </li>
-                        </ul>
-                        <h3>Connect</h3>
-                        <ul class="list-unstyled social">
-                            <li><a href="#"><span class="">
-                                        <ion-icon name="logo-instagram"></ion-icon>
-                                    </span></a></li>
-                            <li><a href="#"><span class="">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </span></a></li>
-                            <li><a href="#"><span class="">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </span></a></li>
-
-                        </ul>
-                    </div>
+                
+                
+            
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <script data-cfasync="false"
                         src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                    <script>
-                    document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="icon-heart text-danger"
-                        aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank"
-                        rel="nofollow noopener">Colorlib</a></p>
+                  
                 </div>
             </div>
         </div>
@@ -413,6 +361,5 @@ session_start();
 
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/hotell/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jun 2022 18:20:13 GMT -->
 
 </html>

@@ -1,17 +1,18 @@
 <?php
-class contactController{
+class ContactController{
 
     public function addContact(){
-        if(isset($_POST['contact'])){
+        if(isset($_POST['sendContact'])){
           $data = array(
-            'name'   => $_POST['name'],
+            'name'   => $_POST['nom'],
             'email'    => $_POST['email'],
-            'message'    => $_POST['message'],
+            'message'   => $_POST['msg'],
         );
-            
+          
             $result = contact::add($data);
               if($result == 'Message envoyé'){
-                header('location: home');
+                var_dump($result);
+                // header('location: home');
               }
               else{
                 echo $result;

@@ -5,6 +5,7 @@ class UserController{
         {
           if(isset($_POST['login'])){
               $data = array(
+                'name'=>$_POST['name'],
                 'email' => $_POST['email'],
                 'password' => $_POST['password'],
               );
@@ -12,13 +13,17 @@ class UserController{
               $data = $user->getUser($data);
               if(password_verify($_POST['password'],$data['password']))
               {
-                header("location:home");     
+                header("location:dashboard");    
             }else {
-              echo "failde";
-            }
-        }    
-      }
-    
+              echo "faild";
+            } 
+            if($_POST['name']=='admin'){
+              header("location:dashboard");  
+        }else{
+          header("location:home"); 
+        }
+      }}
+         
     public function registrer(){
         if (isset($_POST['ajouter'])) {
             $password=password_hash($_POST['password'],
@@ -37,6 +42,5 @@ class UserController{
             }
         }
     }
-
 }
 ?>
