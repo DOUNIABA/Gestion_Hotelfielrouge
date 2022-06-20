@@ -132,18 +132,18 @@
                                 <span>750</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
+
                 <div class="section sec-instagram">
                     <div class="container mb-5">
                         <div class="row">
                             <div class="col-lg-3" data-aos="fade-up">
                                 <h2 class="heading">Gallerie</h2>
-                            </div>
-                          
+                            </div>                         
                         </div>
                     </div>
+
                     <div class="instagram-slider-wrap" data-aos="fade-up" data-aos-delay="200">
                         <div class="instagram-slider" id="instagram-slider">
                             <div class="item">
@@ -152,36 +152,42 @@
                                     <img src="views/assets/images/ITEM10.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
                                     <img src="views/assets/images/elem3.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
                                     <img src="views/assets/images/ITEM1.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
                                     <img src="views/assets/images/elem2.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
                                     <img src="views/assets/images/elem8.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
                                     <img src="views/assets/images/ITEM8.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
+
                             <div class="item">
                                 <a class="instagram-item">
                                     <span class="icon-instagram"></span>
@@ -195,12 +201,10 @@
                                     <img src="views/assets/images/elem7.jpg" alt="Image" class="img-fluid">
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-
+                
                 <div class="site-footer bg-light">
                     <div class="container">
                         <div class="row">

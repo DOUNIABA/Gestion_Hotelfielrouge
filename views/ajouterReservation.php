@@ -1,9 +1,7 @@
 <?php
 session_start();
-
 $newReservation = new ReservationController();
 $newReservation->add();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +59,6 @@ $newReservation->add();
                                           <div class="col-md-12 text-center">
                                             <button type="submit" name="finir" class="btn  w-15" style="background:#F4BFBF ; color: black; ">Submit
                                             </button>
-                  
                                         </div>
                                       </form>
                                       
