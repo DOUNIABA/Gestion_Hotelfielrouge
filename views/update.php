@@ -86,25 +86,25 @@ if (isset($_POST['update'])) {
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="POST" class="php-email-form">
                                         <div class="row gy-4">
-                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?>>
+                                        <input type="hidden" name="id" class="form-control" placeholder="Votre nom" value=<?php echo $client['id'];?> required>
 
                                           <div class="col-md-6">
-                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?>>
+                                           <input type="text" name="name" class="form-control" placeholder="Votre nom" value=<?php echo $client['name'];?> required>
                                           </div>
                                           <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?>>
+                                            <input type="email" class="form-control" name="email" placeholder="Votre e-mail" value=<?php echo $client['email'];?> required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?>>
+                                            <input type="text" class="form-control" name="telephone" placeholder="Numéro téléphone" value=<?php echo $client['phone'];?> required>
                                           </div>
 
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?>>
+                                            <input type="text" class="form-control" name="genre" placeholder="" value=<?php echo $client['genre'];?> required>
                                           </div>
                   
                                           <div class="col-md-12">
-                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?>>
+                                            <input  type="text" class="form-control" name="adress" rows="6" placeholder="Votre Adresse" value=<?php echo $client['adress'];?> required>
                                           </div>
                                        
                                           <div class="col-md-12 text-center">

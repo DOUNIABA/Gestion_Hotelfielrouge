@@ -22,7 +22,6 @@ class User{
          }else {
             return 'error';
          }
-         $stm->close();
          $stm = null;   
         }
         static public function logout(){

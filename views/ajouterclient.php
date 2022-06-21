@@ -94,10 +94,7 @@ $clients=$newClient->AjouterClient();
                                 <div class="card bg-light shadow p-4">
                                     <form action="" method="post" class="php-email-form">
                                         <div class="row gy-4">
-                                        <div class="mb-3">
-                                            <label for="formFileSm" class="form-label">Choisir votre photo</label>
-                                            <input class="form-control form-control-sm" name="image"id="formFileSm" type="file">
-                                            </div>
+                                  
                                             
                                           <div class="col-md-6">
                                             <input type="text" name="name" class="form-control" placeholder="Votre nom" required>

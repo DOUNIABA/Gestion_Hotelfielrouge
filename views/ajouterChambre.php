@@ -95,7 +95,13 @@ $newChambre->addChambre();
                                           </div>
                   
                                           <div class="col-md-6 ">
-                                            <input type="text" class="form-control" name="type" placeholder="Type chambre" required>
+                                          <select class="form-select" name="type" >
+                                                    <?php foreach(CHAMBRE_TYPES as $type){?>
+                                                            <option value="<?= $type?>"
+                        
+                                                            ><?= getChambreTypeText($type)?></option>
+                                                        <?php }?>
+                                            </select>
                                           </div>
                   
                                           <div class="mb-3">

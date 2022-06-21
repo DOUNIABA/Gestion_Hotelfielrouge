@@ -1,1 +1,0 @@
-select *, ABS(datediff(reservation.checkin,reservation.checkout )) as days_count from reservation;

@@ -1,7 +1,4 @@
 <?php
-// $newuser = new ContactController();
-// if (!isset($_SESSION['name'])) {
-//     header("location: signup");
 
 $data = new ContactController();
 $contact = $data->getAllContat();
@@ -44,11 +41,10 @@ $contact = $data->getAllContat();
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
-                        <img src="views/img/user.png"> Profile</a>
+                    
                     <a href="login"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
-                        Logout <i class="fas fa-sign-out-alt"></i> </a>
+                        Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
 
                     </ul>
                 </div>

@@ -37,7 +37,6 @@ session_start();
                                 <li><a href="destination">CHAMBRES</a>
                                 </li>
                                 <li><a href="services">SERVICES</a></li>
-                                <li><a href="about">A PROPOS</a></li>
                                 <li><a href="contact">CONTACT</a></li>
                                 <li><button class="btn btn-dark" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
                             <li> <div class="uuser-name" >
@@ -45,7 +44,11 @@ session_start();
                                         <?php  
                                         echo $_SESSION["name"]; ?> 
                                     </h1></li>
+
+                                    <li><a href="<?php echo "logout"?>"> <?php echo $_SESSION['name']?></li>
+                                    
                              </div> 
+                             
                             </ul>
                            
                         </div>                 
@@ -58,8 +61,7 @@ session_start();
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h1 class="heading mb-5 text-white">Une fois par an, allez dans un endroit où vous n'êtes jamais
-                        allé.</h1>
+                    <h1 class="heading mb-5 text-white">BIENVENUE CHEZ NOUS</h1>
                     <a href="destination" class="btn btn-primary" style="color:black;">Reservez Dés maintenat</a>
                 </div>
             </div>
@@ -84,8 +86,6 @@ session_start();
                             <ion-icon name="restaurant"></ion-icon>
                         </span>
                         <h3>RESTAURANT</h3>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
                     </div>
                 </div>
 
@@ -96,8 +96,7 @@ session_start();
                         </span>
                         <h3>
                             TRANSPORT</h3>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                        
                     </div>
                 </div>
                 <div class="item">
@@ -106,8 +105,7 @@ session_start();
                             <ion-icon name="wifi-outline"></ion-icon>
                         </span>
                         <h3>WIFI GRATUIT</h3>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                       
                     </div>
                 </div>
 
@@ -120,8 +118,8 @@ session_start();
             <div class="row">
                 <div class="col-lg-7">
                     <div id="features-slider-nav">
-                        <button class="btn btn-primary" class="prev" data-controls="prev">Prev</button>
-                        <button class="btn btn-primary" class="next" data-controls="next">Next</button>
+                        <button class="btn btn-primary" class="prev" data-controls="prev"></button>
+                        <button class="btn btn-primary" class="next" data-controls="next"></button>
                     </div>
                 </div>
             </div>
@@ -135,97 +133,14 @@ session_start();
                         class="img-fluid img-box-shadow rounded">
                 </div>
                 <div class="col-lg-4 align-self-center" data-aos="fade-left" data-aos-delay="100">
-                    <h2 class="heading mb-4">About Hotell</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-                        a large language ocean.</p>
-                    <p>
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <h2 class="heading mb-4">A propos de l'Hotell</h2>
+                    <p>Cela vous semble peut-être évident, mais commenceons par là. Réserver un séjour en hôtel vous permettra d’avoir un confort que vous n’aurez jamais dans un camping. Même dans un camping cinq étoiles, vous n’aurez pas le même type de confort. Dans un hôtel, vous aurez un lit moelleux, des draps bien propres, des murs et un toit qui ne fait pas de bruit lorsque la pluie tombe dessus. Cela semble élémentaire, mais ce sont des choses que vous n’aurez pas en camping.</p>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div class="section sec-posts">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-7">
-                    <h2 class="heading mb-4">Blog Posts</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="post-slider-wrap">
-                        <div id="post-slider-nav">
-                            <button class="btn btn-primary" class="prev" data-controls="prev">Prev</button>
-                            <button class="btn btn-primary" class="next" data-controls="next">Next</button>
-                        </div>
-                        <div class="post-slider" id="post-slider">
-
-                            <div class="item">
-                                <div class="post-entry">
-                                    <a href="ajouterReservation" class="thumbnail"><img src="././views/assets/images/item2.jpg"
-                                            alt="Image" class="img-fluid"></a>
-                                    <div class="post-entry-body">
-                                        <p>Type:Single<br>
-                                            prix: <br>
-                                            Max-occupation:1</p>
-                                        <div class="read-more-wrap">
-                                            <a href="" class="more">Rserver</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="post-entry">
-                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item3.jpg"
-                                            alt="Image" class="img-fluid"></a>
-                                    <div class="post-entry-body">
-                                        <p>Type:Double<br>
-                                            prix: <br>
-                                            Max-occupation:1</p>
-                                        <div class="read-more-wrap">
-                                            <a href="ajouterReservation" class="more">Rserver</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="post-entry">
-                                    <a href="signup" class="thumbnail"><img src="././views/assets/images/item4.jpg"
-                                            alt="Image" class="img-fluid"></a>
-                                    <div class="post-entry-body">
-                                        <p>Type:Twins<br>
-                                            prix: <br>
-                                            Max-occupation:1</p>
-                                        <div class="read-more-wrap">
-                                            <a href="ajouterReservation" class="more">Rserver</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="post-entry">
-                                    <a href="signup#" class="thumbnail"><img src="././views/assets/images/background1.jpg"
-                                            alt="Image" class="img-fluid"></a>
-                                    <div class="post-entry-body">
-                                        <p>Type:Deluxe<br>
-                                            prix: <br>
-                                            Max-occupation:1</p>
-                                        <div class="read-more-wrap">
-                                            <a href="ajouterReservation" class="more">Rserver</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+ 
     <div class="section sec-instagram">
         <div class="container mb-5">
             <div class="row">
@@ -239,50 +154,42 @@ session_start();
             <div class="instagram-slider" id="instagram-slider">
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="././views/assets/images/ITEM10.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="././views/assets/images/elem3.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/ITEM1.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/elem2.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/elem8.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/ITEM8.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/elem1.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
 
                 <div class="item">
                     <a class="instagram-item">
-                        <span class="icon-instagram"></span>
                         <img src="./views/assets/images/elem7.jpg" alt="Image" class="img-fluid">
                     </a>
                 </div>
@@ -292,31 +199,59 @@ session_start();
     </div>
 
 
-    <div class="site-footer bg-light">
+    
+<div class="site-footer bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="widget">
-                        <h3>Accueil</h3>
+                        <h3>ACCUEIL</h3>
                         <ul class="list-unstyled float-left links">
-                            <li><a href="#">About us</a></li>
+                            <li><a href="#">APROPOS</a></li>
                             <li><a href="#">Services</a></li>
-                            <li><a href="#">Chambres</a></li>
-                            <li><a href="#">A propos de nous</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Destination</a></li>
+                     
                         </ul>
                     </div>
                 </div>
-                
-                
-            
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="widget">
+                        <h3>Zone de pratique</h3>
+                        <ul class="list-unstyled float-left links">
+                            <li><a href="#">VOYAGE</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">TourS</a></li>
+                            <li><a href="#">VACANCES AVEC FAMILLE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="widget">
+                        <h3>Services</h3>
+                        <ul class="list-unstyled float-left links">
+                            <li><a href="#">RESTAURANR</a></li>
+                            <li><a href="#">TRANSPORT</a></li>
+                            <li><a href="#">WIFI</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="widget">
+                        
+                        <h3>Connect</h3>
+                        <ul class="list-unstyled social">
+                            <li><a href="#"><span class=""><ion-icon name="logo-instagram"></ion-icon></span></a></li>
+                            <li><a href="#"><span class=""><ion-icon name="logo-twitter"></ion-icon></span></a></li>
+                            <li><a href="#"><span class=""><ion-icon name="logo-facebook"></ion-icon></span></a></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-center">
-                    <script data-cfasync="false"
-                        src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                  
+                        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                       
                 </div>
             </div>
         </div>
@@ -331,31 +266,28 @@ session_start();
     <script src="views/js/bootstrap.bundle.min.js"></script>
     <script src="views/js/tiny-slider.js"></script>
     <script src="views/js/flatpickr.min.js"></script>
-    <script src="views/js/glightbox.min.js%2baos.js%2bnavbar.js%2bcounter.js%2bcustom.js.pagespeed.jc.oPXsBT0gNp.js">
+    <script src="views/js/glightbox.min.js%2baos.js%2bnavbar.js%2bcounter.js%2bcustom.js.pagespeed.jc.oPXsBT0gNp.js"></script>
+    <script>
+        eval(mod_pagespeed_JkAIZiki3e);
     </script>
     <script>
-    eval(mod_pagespeed_JkAIZiki3e);
+        eval(mod_pagespeed_t4wOQmRalS);
     </script>
     <script>
-    eval(mod_pagespeed_t4wOQmRalS);
+        eval(mod_pagespeed__uSXtZ$yB8);
     </script>
     <script>
-    eval(mod_pagespeed__uSXtZ$yB8);
+        eval(mod_pagespeed_7VBtNXU4$J);
     </script>
     <script>
-    eval(mod_pagespeed_7VBtNXU4$J);
-    </script>
-    <script>
-    eval(mod_pagespeed_ZG58KtslWH);
+        eval(mod_pagespeed_ZG58KtslWH);
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
-        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
-        data-cf-beacon='{"rayId":"71941e7e4f0cc96d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
+  
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"71941e7e4f0cc96d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
         crossorigin="anonymous"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -2,7 +2,7 @@
 
 class ChambreController
 {
-    public function getAllChambre(){
+    public function getAllChambres(){
       $chambre=Chambre::getAll();
       return $chambre;
     }
@@ -28,18 +28,9 @@ class ChambreController
     }
     
     public function ModifierChambre(){
-      if(isset($_POST['id'])){
-      
-        $resultat = Chambre::update($_POST['id'],$_POST['prix'],$_POST['type'],$_POST['description'],$_POST['num_chambre']);
-        var_dump($resultat);
-        if ($resultat ==='OK'){
-          // header('location:chambre');
-      
-        }else {
-          echo $resultat;
-        }
-      }    
-          }
+            return  $resultat = Chambre::update($_POST['id'],$_POST['prix'],$_POST['type'],$_POST['description'],$_POST['num_chambre']);
+            
+    }
 
     public function getOneChambre()
     {

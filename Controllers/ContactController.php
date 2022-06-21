@@ -11,8 +11,7 @@ class ContactController{
           
             $result = contact::add($data);
               if($result == 'Message envoyé'){
-                var_dump($result);
-                // header('location: home');
+             
               }
               else{
                 echo $result;

@@ -5,6 +5,9 @@ $newContact = new ContactController();
 $newContact->addContact();
 }
 ?>
+<?php 
+session_start();
+?>
 <!Doctype html>
 <html lang="en">
 <head>
@@ -25,39 +28,38 @@ $newContact->addContact();
 <div class="site-mobile-menu-body"></div>
 </div>
 <nav class="site-nav">
-<div class="container">
-<div class="menu-bg-wrap">
-<div class="site-navigation">
-<div class="row g-0 align-items-center">
-<div class="col-2">
-<a href="home.html" class="logo m-0 float-start text-white">Hotel</a>
-</div>
-<div class="col-8 text-center">
-<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-<li><a href="home">ACCUEIL</a></li>
-<li>
-<a href="destination">CHAMBRES</a>
-
-</li>
-<li><a href="services">Services</a></li>
-<li><a href="about">A PROPOS</a></li>
-<li class="active"><a href="contact">CONTACT</a></li>
-</ul>
-</div>
-<div class="col-2 text-end">
-<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
-<span></span>
-</a>
-<a href="#" class="call-us d-flex align-items-center">
-<span class="icon-phone"></span>
-<span>123-489-9381</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</nav>
+        <div class="container">
+            <div class="menu-bg-wrap">
+                <div class="site-navigation">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                            <a href="home.html" class="logo m-0 float-start text-white">Hotel</a>
+                        </div>
+                        <div class="col-8 text-center">
+                            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+                                <li class="active"><a href="home">ACCUEIL</a></li>
+                                <li><a href="destination">CHAMBRES</a>
+                                </li>
+                                <li><a href="services">SERVICES</a></li>
+                                <li><a href="contact">CONTACT</a></li>
+                                <li><button class="btn btn-dark" class="next" data-controls="next"><a href="signup">Connexion</a></button></li>
+                            <li> <div class="uuser-name" >
+                                    <h1 style="color:white;"> Bonjour
+                                        <?php  
+                                        echo $_SESSION["name"]; ?> 
+                                    </h1></li>
+                             </div> 
+                             <li><a href="login"
+                        class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
+                        Deconnexion <i class="fas fa-sign-out-alt"></i> </a></li>
+                            </ul>
+                           
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 <div class="hero overlay" style="background-image:url(./views/assets/images/ITEM8.jpg)">
 <div class="container">
 <div class="row align-items-center justify-content-center">

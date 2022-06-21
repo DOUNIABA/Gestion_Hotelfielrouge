@@ -4,7 +4,6 @@
         $stm=DB::connect()->prepare('SELECT * FROM client');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
-        $stm->close();
         $stm = null;
     }
 
@@ -20,7 +19,6 @@
      }else {
         return 'error';
      }
-     $stm->close();
      $stm = null;
     }
 
@@ -28,7 +26,6 @@
       $stm=DB::connect()->prepare('SELECT * FROM client where id =?');
       $stm->execute([$id]);
       return $stm->fetch(PDO::FETCH_ASSOC);
-      $stm->close();
       $stm = null;
     }
 
@@ -39,7 +36,6 @@
         }else {
            return 'error';
         } 
-        $stm->close();
         $stm = null;    
        }
        static public function delete($data){
@@ -55,7 +51,13 @@
          }
     }catch(PDOException $ex){
         echo 'erreur' . $ex->getMessage();
-    }
+    }   
  }
+ static public function loginClient($id){
+   $stm=DB::connect()->prepare('SELECT * FROM client where email="?"');
+   $stm->execute([$id]);
+   return $stm->fetchAll(PDO::FETCH_ASSOC);
+   $stm = null;
+}
  }
 ?>

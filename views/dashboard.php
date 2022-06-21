@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -38,11 +37,9 @@
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
-                        <img src="views/img/user.png"> Profile</a>
                     <a href="login"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
-                        Logout <i class="fas fa-sign-out-alt"></i> </a>
+                        Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
 
                     </ul>
                 </div>
@@ -90,7 +87,6 @@
                             <div class="p-3   d-flex justify-content-around align-items-center card_reservation ">
                                 <div>
                                     <img src="views/img/bookingCart.png">
-
                                     <p class="fs-5 mb-5 Secondary-text">Réservations</p>
                                 </div>
                                 <h1 class="fs-5 mt-5">556</h1>
@@ -98,10 +94,9 @@
                         </div>
                        
                     </div>
-                 
+                
                 </div>
             </div>
-
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
             <script>

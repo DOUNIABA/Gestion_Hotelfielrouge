@@ -2,14 +2,17 @@
 
 
 $chambre = new ChambreController();
-$chambre=$chambre->getOneChambre();
+
 
 if (isset($_POST['update'])) {
 
     $existeChambre = new ChambreController();
-    $chambres=$existeChambre->ModifierChambre();
+    $result=$existeChambre->ModifierChambre();
+    var_dump($result);
+    exit;
     }
 
+    $chambre=$chambre->getOneChambre();
 
 
 ?>
@@ -98,19 +101,25 @@ if (isset($_POST['update'])) {
                          
                             <article class="entry">
                                 <div class="card bg-light shadow p-4">
-                                    <form action="" method="POST" class="php-email-form">
+                                    <form action="chambre" method="POST" class="php-email-form">
                                         <div class="row gy-4">
 
                                          
-
+                                            <input type="hidden" name="id" value='<?= $chambre['id']?>'>
                                           <div class="col-md-6 ">
                                             <input type="text" class="form-control" name="prix" placeholder="Prix" value=<?php echo $chambre['prix'];?> required>
                                           </div>
                   
                                           <div class="col-md-6">
-                                            <input type="text" class="form-control" name="type" placeholder="Type chambre" value=<?php echo $chambre['type'];?> required>
+                                            <select class="form-select" name="type" >
+                                                    <?php foreach(CHAMBRE_TYPES as $type){?>
+                                                            <option value="<?= $type?>"
+                                                                <?= $chambre['type']==$type?'selected':''?>
+                                                            ><?= getChambreTypeText($type)?></option>
+                                                        <?php }?>
+                                            </select>
                                           </div>
-
+                                          
                                           <div class="col-md-6">
                                             <input type="text" class="form-control" name="description" placeholder="" value=<?php echo $chambre['description'];?> required>
                                           </div>
@@ -120,12 +129,10 @@ if (isset($_POST['update'])) {
                                           </div>
                                        
                                           <div class="col-md-12 text-center">
-                                            <button type="submit" name="update" class="btn  w-25" style="background:#ECB390 ; color: #012970; ">Submit 
+                                            <button type="submit" name="update" class="btn  w-25" style="background:#ECB390 ; color: #012970;">Submit 
                                             </button>
                                           </div>
-                                          
-                  
-                                        </div>
+                                     </div>
                                       </form>
                                 </div>
 

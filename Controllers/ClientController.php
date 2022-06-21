@@ -59,6 +59,24 @@ if(isset($_POST['submit'])){
           }
         }
       }
+      public function login()
+      {
+        if (isset($_POST['Client'])) {
+          $data = array(
+            'name' => $_POST['name'],
+            'password' => $_POST['password'],
+          );
+          $client = new client;
+          $data = $client->loginclient($data);
+    
+          if (password_verify($_POST['password'], $data['password'])) {
+            if ($_POST['name'] == 'client') {
+              header("location:client");
+            } else {
+              header("location:home");
+            }
+          }
+        }
+      }
 
 }
-?>

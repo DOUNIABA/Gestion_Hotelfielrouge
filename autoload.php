@@ -12,4 +12,4 @@ function autoload($class){
         }    
     }
 }
-?>
+require_once 'Constants.php';

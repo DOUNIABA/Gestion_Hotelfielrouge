@@ -1,7 +1,12 @@
 <?php 
- if(isset($_POST['login'])){
-  $newuser = new UserController();
+ if(isset($_POST['Admin'])){
+  $newuser = new AdminController();
   $users = $newuser->login();
+
+ }
+ if(isset($_POST['Client'])){
+  $client = new ClientController();
+  $client = $client->login();
 
  }
 ?>
@@ -14,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./views/assets/css/style1.css"/>
+    <link rel="stylesheet" type="text/css" href="http://parsleyjs.org/src/parsley.css" />
+
 </head>
 
 <body>
@@ -37,23 +44,23 @@
         <div class="form-content">
                   <div class="login-form">
             <div class="title">Se connecter</div>
-          <form action="" method="POST">
+          <form action="" method="POST" data-parsley-validate>
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" name="email" placeholder="Enter your email" >
+                <input type="text" name="email" placeholder="Enter your email"data-parsley-type="email" data-parsley-trigger="change"	required >
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password"name="password" placeholder="Enter your password" >
+                <input type="password"name="password" placeholder="Enter your password" data-parsley-trigger="change" required  >
               </div>
               
               <div class="button input-box" ><a href="admin">
-                <input type="submit" value="Admin" name=""style="width=100px;"></a>
+                <input type="submit" value="Admin" name="Admin"style="width=100px;"></a>
               </div>
               
               <div class="button input-box">
-                <input type="submit" value="Client" name="">
+                <input type="submit" value="Client" name="Client">
               </div>
               
               <div class="button input-box">
@@ -67,3 +74,5 @@
   </div>
 </body>
 </html>       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type=" text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>

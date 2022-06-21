@@ -8135,7 +8135,6 @@ span.flatpickr-weekday {
     order: 2!important;
     max-height: 78vh;
     overflow: auto!important;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .75)));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .75) 100%);
     -webkit-transition: opacity .3s linear;
     transition: opacity .3s linear;
@@ -9076,7 +9075,6 @@ progress {
 .table> :not(caption)>*>* {
     padding: .5rem .5rem;
     background-color: var(--bs-table-bg);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bs-table-accent-bg)), to(var(--bs-table-accent-bg)));
     background-image: -webkit-linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));
     background-image: -o-linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));
     background-image: linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));
@@ -9284,7 +9282,6 @@ textarea.form-control {
 .btn-primary {
     color: #000;
     background-color: #F4BFBF;
-    border-color: 
 }
 
 .btn-primary:hover {
@@ -9662,7 +9659,6 @@ textarea.form-control {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(data:image/svg+xml,%3csvg\ xmlns=\'http://www.w3.org/2000/svg\'\ viewBox=\'0\ 0\ 16\ 16\'\ fill=\'%23008370\'%3e%3cpath\ fill-rule=\'evenodd\'\ d=\'M1.646\ 4.646a.5.5\ 0\ 0\ 1\ .708\ 0L8\ 10.293l5.646-5.647a.5.5\ 0\ 0\ 1\ .708.708l-6\ 6a.5.5\ 0\ 0\ 1-.708\ 0l-6-6a.5.5\ 0\ 0\ 1\ 0-.708z\'/%3e%3c/svg%3e);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
@@ -9675,7 +9671,6 @@ textarea.form-control {
     height: 1.25rem;
     margin-left: auto;
     content: "";
-    background-image: url(data:image/svg+xml,%3csvg\ xmlns=\'http://www.w3.org/2000/svg\'\ viewBox=\'0\ 0\ 16\ 16\'\ fill=\'%23212529\'%3e%3cpath\ fill-rule=\'evenodd\'\ d=\'M1.646\ 4.646a.5.5\ 0\ 0\ 1\ .708\ 0L8\ 10.293l5.646-5.647a.5.5\ 0\ 0\ 1\ .708.708l-6\ 6a.5.5\ 0\ 0\ 1-.708\ 0l-6-6a.5.5\ 0\ 0\ 1\ 0-.708z\'/%3e%3c/svg%3e);
     background-repeat: no-repeat;
     background-size: 1.25rem;
     -webkit-transition: -webkit-transform .2s ease-in-out;
@@ -10180,18 +10175,16 @@ textarea.form-control {
 
 @-webkit-keyframes spinner-border {
     to {
-        -webkit-transform: rotate(360deg)/* rtl:ignore */
-        ;
-        transform: rotate(360deg)/ rtl:ignore */
+        -webkit-transform: rotate(360deg)
         ;
     }
 }
 
 @keyframes spinner-border {
     to {
-        -webkit-transform: rotate(360deg)/* rtl:ignore */
+        -webkit-transform: rotate(360deg)
         ;
-        transform: rotate(360deg)/* rtl:ignore */
+        transform: rotate(360deg)
         ;
     }
 }

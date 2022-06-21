@@ -1,6 +1,6 @@
 <?php
 $data = new ChambreController();
-$chambres=$data->getAllChambre();
+$chambres=$data->getAllChambres();
 
 ?>
 
@@ -43,11 +43,10 @@ $chambres=$data->getAllChambre();
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
                 
-                    <a href="#" class="list-group-item mx-2 border-0 fw-bold  fs-6 my-2 p-2 ">
-                        <img src="views/img/user.png"> Profile</a>
+                   
                     <a href="index.html"
                         class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
-                        Logout <i class="fas fa-sign-out-alt"></i> </a>
+                        Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
 
                     </ul>
                 </div>
@@ -85,7 +84,7 @@ $chambres=$data->getAllChambre();
                             <table class="table bg-white rounded shadow-sm align-middle overflow-scroll  table-hover">
                                 <thead>
                                     <tr>
-                                        <th> </th>
+                                        
                                                 <th>Prix</th>
                                                 <th>Type</th>
                                                 <th>Description</th>
@@ -99,10 +98,8 @@ $chambres=$data->getAllChambre();
                                     
                                 <?php
                                     foreach($chambres as $chambre){
-                                    ?>
-                                    
+                                    ?>                                   
                                     <tr>
-                                        <td> <img src="image/user.jpg" alt="user" style="width: 50px;"></td>
                                         <td><?php echo $chambre['prix']?></td>
                                         <td><?php echo $chambre['type']?></td>
                                         <td><?php echo $chambre['description']?></td>

@@ -18,22 +18,5 @@ class DB{
 
 }
 
-const RESERVATION_STATUS_ACCEPTED=1;
-const RESERVATION_STATUS_REJECTED=0;
-const RESERVATION_STATUS_PENDING=11;
-
-function getStatusText(int $status){
-        switch ($status) {
-            case RESERVATION_STATUS_ACCEPTED :
-                return 'accepté';
-            case RESERVATION_STATUS_REJECTED :
-                return 'refusé';
-            case RESERVATION_STATUS_PENDING :
-                return 'En attent';
-            default:
-            return 'non connu';
-                break;
-            }
-}
 ?>
 

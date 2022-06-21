@@ -5,7 +5,6 @@
         SELECT chambre.* FROM chambre ');
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
-        $stm->close();
         $stm = null;
     }
     
@@ -22,26 +21,19 @@
          }else {
             return 'erreur';
          }
-         $stm->close();
          $stm = null;   
      }
     static public function getChambre($id){     
       $stm=DB::connect()->prepare('SELECT * FROM chambre where id =?');
       $stm->execute([$id]);
       return $stm->fetch(PDO::FETCH_ASSOC);
-      $stm->close();
       $stm = null;
     }
 
      static public function update($id,$prix,$type,$description,$num_chambre){
         $stm = DB::connect()->prepare("UPDATE chambre SET prix=?, type=?, description=? , num_chambre= ? WHERE id= ?");   
-        if ($stm->execute([$prix,$type,$description,$num_chambre,$id])) {
-           return 'OK';
-        }else {
-           return 'error';
-        } 
-        $stm->close();
-        $stm = null;
+        $stm->execute([$prix,$type,$description,$num_chambre,$id]);
+        return $stm->rowCount()>0;
          
        }
              
