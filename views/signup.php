@@ -25,15 +25,11 @@ if (isset($_POST['ajouter'])) {
     <div class="cover">
       <div class="front">
         <div class="text" style="background:URL('./views/assets/images/images.jpg')  ;">
-          <span class="text-1"> Chaque nouveau ami est une <br> Nouvelle Aventure</span>
-          <span class="text-2">Let's get connected</span>
+          
         </div>
       </div>
       <div class="back">
-        <div class="text">
-          <span class="text-1" text-dark>Complete miles of journey <br>avec une seule étapep</span>
-          <span class="text-2">On commence</span>
-        </div>
+        
       </div>
     </div>
     <div class="forms">

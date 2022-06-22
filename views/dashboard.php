@@ -9,6 +9,15 @@ if (isset($_POST['valide'])) {
 if (isset($_POST['refuse'])) {
     $valide = $data->RefuserReservation();
 }
+$datas= new ClientController();
+$client=$datas->getAllClients();
+$clientCount=$datas->getCountClient();
+
+$room=new ChambreController();
+$chambreCount=$room->getCountChambre();
+
+$res= new ReservationController();
+$reserveCount=$res->getcountReservation();
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +56,7 @@ if (isset($_POST['refuse'])) {
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
 
-                    <a href="login" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
+                    <a href="logout" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
 
                     </ul>
@@ -75,6 +84,7 @@ if (isset($_POST['refuse'])) {
                                     <img src="views/img/user.png">
                                     <p class="fs-5 mb-5 Secondary-text">Clients</p>
                                 </div>
+                                <h1 class="fs-5 mt-5 text-darrk"><?php echo $clientCount['clientes']; ?></h1>
 
                             </div>
                         </div>
@@ -84,21 +94,19 @@ if (isset($_POST['refuse'])) {
                                     <img src="views/img/chambre.png">
                                     <p class="fs-5 mb-5 Secondary-text">Chambres</p>
                                 </div>
-                                <h1 class="fs-5 mt-5 text-white">13</h1>
+                                <h1 class="fs-5 mt-5 text-dark"><?php echo $chambreCount['rooms']; ?></h1>
                             </div>
                         </div>
                         <div class=" col-lg-4 col-md-5  mb-4">
                             <div class="p-3   d-flex justify-content-around align-items-center card_reservation ">
                                 <div>
                                     <img src="views/img/bookingCart.png">
-                                    <p class="fs-5 mb-5 Secondary-text">Réservations</p>
+                                    <p class="fs-5 mb-5 Secondary-text"></p>
                                 </div>
-                                <h1 class="fs-5 mt-5">556</h1>
+                                <h1 class="fs-5 mt-5"><?php echo $reserveCount['reserv']; ?></h1>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
 

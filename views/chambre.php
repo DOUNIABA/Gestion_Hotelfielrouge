@@ -41,7 +41,7 @@ $chambres = $data->getAllChambres();
                         <img src="views/img/message.png"> Messages</a>
 
 
-                    <a href="index.html" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
+                    <a href="logout" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
 
                     </ul>

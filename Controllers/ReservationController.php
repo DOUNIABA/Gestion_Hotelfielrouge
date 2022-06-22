@@ -40,11 +40,14 @@ class ReservationController
       }
     }
   }
-
-
   function getChambreData($id)
   {
     $chambreModel = new Chambre();
     return $chambreModel->getChambre($id);
+  }
+
+  public function getcountReservation(){
+    $reservation=Reservation::getcountReservation();
+    return $reservation;
   }
 }

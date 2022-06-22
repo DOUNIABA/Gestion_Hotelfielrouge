@@ -52,4 +52,9 @@ class ChambreController
       }
     }
   }
+
+  public function getCountChambre(){
+    $chambre=Chambre::getCountChambre();
+    return $chambre;
+  }
 }

@@ -76,4 +76,8 @@ class ClientController
      
     }
   }
+  public function getCountClient(){
+    $client=Client::getCountClient();
+    return $client;
+  }
 }

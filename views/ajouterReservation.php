@@ -1,4 +1,3 @@
-<pre>
 <?php
 session_start();
 $newReservation = new ReservationController();
@@ -6,18 +5,15 @@ $chambre = null;
 if (isset($_POST['addreservation'])) {
   $success = $newReservation->add();
 } else if (isset($_POST['idChambre'])) {
-
   $chambre = $newReservation->getChambreData($_POST['idChambre']);
 } else {
   header('location:destination');
   exit;
 }
-
 ?>
-</pre>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,7 +57,6 @@ if (isset($_POST['addreservation'])) {
                   <a href="destination" class="btn btn-primary">Retourner à la liste des chambres</a>
                 </div>
 
-
               <?php } ?>
             <?php } else {
             ?>
@@ -96,7 +91,7 @@ if (isset($_POST['addreservation'])) {
                         <input type="date" class="form-control" name="checkout" placeholder="Check Out" value="<?= (new DateTime('tomorrow'))->format("Y-m-d") ?>">
                         <label>Check-Out</label>
                       </div>
-                      <div class="badge badge-primary prix-total text-light bg-success w-25 mx-auto"><?= $chambre['prix'] ?> DH</div>
+                      <div class="badge badge-primary prix-total text-light bg-success w-25 mx-auto"><?= $chambre['prix']?>DH</div>
                       <div class="col-md-12 text-center">
                         <button type="submit" name="addreservation" class="btn  w-15" style="background:#F4BFBF ; color: black; ">Confirmer
                         </button>

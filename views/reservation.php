@@ -48,7 +48,7 @@ if (isset($_POST['refuse'])) {
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
 
-                    <a href="login" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
+                    <a href="logout" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
                     </ul>
                 </div>

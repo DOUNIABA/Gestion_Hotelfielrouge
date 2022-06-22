@@ -57,4 +57,11 @@ class Chambre
          echo 'erreur' . $ex->getMessage();
       }
    }
+
+   static public function getcountChambre(){
+      $stm = DB::connect()->prepare('SELECT COUNT(*) as rooms FROM chambre ');
+      $stm->execute();
+      return $stm->fetch(PDO::FETCH_ASSOC);
+
+   }
 }

@@ -1,12 +1,10 @@
 <?php
 $data = new ClientController();
 $clients = $data->getAllClients();
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +15,6 @@ $clients = $data->getAllClients();
     <link rel="stylesheet" href="views/css/dashboard.css" />
     <title>Dashboard</title>
 </head>
-
 <body>
     <main>
         <div class="d-flex" id="dashboard">
@@ -41,9 +38,8 @@ $clients = $data->getAllClients();
                     <a href="message" class="list-group-item mx-2 fw-bold  fs-6  border-0 my-2  rounded-3 p-2  ">
                         <img src="views/img/message.png"> Messages</a>
 
-                    <a href="login" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
+                    <a href="logout" class="list-group-item mx-5 border-0 fw-bold  fs-6  bg-transparent  mt-5 mb-2 ">
                         Deconnexion <i class="fas fa-sign-out-alt"></i> </a>
-
 
                     </ul>
                 </div>
@@ -73,8 +69,6 @@ $clients = $data->getAllClients();
                                     <th>Adresse</th>
                                     <th>Téle</th>
                                     <th>Genre</th>
-
-
                                     <th></th>
                                 </tr>
                             </thead>

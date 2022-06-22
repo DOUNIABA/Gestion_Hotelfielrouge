@@ -20,4 +20,3 @@ else{
     }
 
     include('views/includes/footer.php') ;
-    

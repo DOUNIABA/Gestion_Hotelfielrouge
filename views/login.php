@@ -51,17 +51,15 @@ if (isset($_POST['Client'])) {
               <div class="d-flex"></div>
               
 
-              <div class="button input-box">
+              <div class="button input-box" style="justify-content: center;">
                   <input type="submit" value="Admin" name="Admin" style="width:100px;">
               </div>
 
-              <div class="button input-box">
+              <div class="button input-box" style="justify-content: center;">
                 <input type="submit" value="Client" name="Client" style="width:100px;">>
               </div>
 
-              <div class="button input-box">
-                <input type="submit" value="Sumbit" name="login">
-              </div>
+             
               <div class="text sign-up-text">Vous n'avez pas un compte? <a href="signup">S'inscrire maintenant</label></div>
             </div>
           </form>

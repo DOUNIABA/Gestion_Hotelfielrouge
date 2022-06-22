@@ -52,4 +52,12 @@ class Reservation
       $interval = date_diff($datetime1, $datetime2);
       return $interval->d;
    }
+   static public function getcountReservation(){
+      $stm = DB::connect()->prepare('SELECT COUNT(*) as reserv FROM reservation ');
+      $stm->execute();
+      return $stm->fetch(PDO::FETCH_ASSOC);
+
+   }
+
+   
 }

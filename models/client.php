@@ -66,11 +66,10 @@ class Client
       return $stm->fetch();
    }
 
-   static public function countClient(){
-      $stm = DB::connect()->prepare('SELECT COUNT * FROM client order by id');
+   static public function getcountClient(){
+      $stm = DB::connect()->prepare('SELECT COUNT(*) as clientes FROM client ');
       $stm->execute();
-      return $stm->fetchAll(PDO::FETCH_ASSOC);
-      $stm = null;
+      return $stm->fetch(PDO::FETCH_ASSOC);
 
    }
 }
