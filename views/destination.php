@@ -96,8 +96,7 @@ session_start();
                                     <span><?= $chambre['prix'] ?></span>
                                 </div>
                             </div>
-
-                            </a>
+                        </form>
                     </div>
                 <?php } ?>
                 <div class="section sec-instagram">

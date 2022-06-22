@@ -149,7 +149,10 @@ if (isset($_POST['addreservation'])) {
       checkingDateEl.addEventListener('change', inputChanged);
       checkoutDateEl.addEventListener('change', inputChanged);
       document.querySelector('form').addEventListener('submit', function(e) {
-        if (!getDiffrence() > 0) {
+        console.log('form sub');
+      
+        console.log("dif",getDiffrence());
+        if (getDiffrence() <1) {
           e.preventDefault();
           Swal.fire({
             icon: 'error',
